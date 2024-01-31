@@ -1,0 +1,89 @@
+												Wordpress
+
+1. Download Xampp (by Apache studio) 
+2. Download Worpress.org .
+3. wordpress zip files extact then these extract files should be copy in c// xampp folder named: htdocs .
+4. Then open Xampp start 2 Actions  1= Apache and 2 = My SQL
+5. Then Search in chrome localhost/wordpress.
+6. Then search in chrome another thing which is http://localhost/phpmyadmin/ 
+	Database Name : Jo hmny c mn copy kiya tha jesy wordpress ya wordpress2
+	user Name : 	root 
+	Password :	blank
+	Submit
+	Run  The Installation
+Then 
+	Site Title : Website ka name 
+	user name :admin ya jo b rkhna h 
+	pasword :	admin ya apni mrzi ka
+	email:	add
+	install wordpress
+7. Then go to localhost/wordpress then start procedure  
+8. Set name of website select user name password etc.
+9. Then open website edit as you want .
+10. Open Posts where you want to add content .
+11. Then Open setting in Dashboard General Setting :  Set  Site Title then Tagline then safe it .
+12. Then Appeaarence go to themes select themes which you want (best way is downlaod themes ) or just simple activate .
+13. Delete Installed Plugings . Then Go To Themes 
+14. Go To Pages ( Make Your Own Design) or add images titles   etc copy that link .
+15. After Making Pages Then Next step is to add These pages .
+16. For Adding  Pages : Go to setting then reading  select static page then select two pages then save it.
+17. For Navigation Make menu .
+18. For Making Menu Go to Appearence In Appearence there is a menu option .
+19. Menu Name Then create then Add all  pages . Then Add To Menu and save menu . 
+20. After That Goto Manage Locations .
+21. For Changing Url : Goto Setting then open permalink and best is to select post name and save .
+22. In a dashbard there is a customization icon in that we can fix a site icon.
+23. Footer : Likha hua change krny k lie customize then code footer bottom then publish.
+24. 1 page py ktny pages show hony chye usk lie rerading mn jaa k pages select krny hon gy.
+25. Then in appearenece install plugins.
+26. Contact form k lie WPForms install krna h . Then wo form apny hisab sy set krna h or save kr k goto pages or jdr form lagana h udr add field kr k update krna h just.
+27.  Phr Udr search kr k (eg agr hmny wpforms sy forms bnaya h to usko search kr krna  h or add and update only ). Then install 
+28.  Then set up thatwp  mail smpt.
+29. Then Configure gmail in set up thatwp  mail smpt.
+30. New Prjocet k lie Jo zip file no.3 py line likhi h  usi trah worpress ki zip file ko new tareeqy sy again extract kr k htrdocs mn copy krni h .
+31. or phr same uper ki trah chrome py likhna h Then Search in chrome localhost/wordpress2.
+
+
+
+										Make a Perfect website
+
+1. Delete All Plugins and themes and downlaod new theme which you want  and activate it . 
+2. In a side bar it shows our downlaoded theme then apni mrzi ka template select krna h  (appearence mn starter templates sy ) then import which we want .
+3. Then we need to install a plugin which is livemesh for elementor.
+4. Then Edit With Elementor (elementor is a drag and  drop ).
+5.  Website start kr k 3Dots py touch kr k Edit section   or apni mrzi ki selection kr ly.
+6. koi theme dalni ho to phly select then save and insert then upload .
+7. Background mn video dalny k lie jdr b wo video h uska link copy kr k dalna pry ga 
+8. Writing Change krny k lie Typography then transform sy chnge hogi
+9. After setting setting sy title apni mrzi ka .
+10. Then goto settings appearence then menu .
+11. Footer ko change krny k lie uper customize ka options pa jana h 
+12. Agr hmny jesy k button ata h start now to us sy agr ksi specific page ya jaga py jana h to / or us chz ka link copy kr k url mn dal dena h /
+13. Ksi b chz mn animation dalni ho to edit with elementor select then advance option then motion effects then enterance animations .
+14. After Making a website install a new plugin which is ( all in one wp migration ) install and activate .
+15. Then side bar py is plugin ko open krna h or export to file krna h . or us file ko use kry gy agy ye file ki type mn hmy puri website download krwa deta h .
+16. Search on google digitalocean.com  then signup  krna h uspy (refferal code b use kr skty h ksi ka )(jesy code with harry ka h = https://m.do.co/c/2f2aa100b7ee) 
+17.  for a professional hosting  use  ( aws ) .
+
+
+
+
+
+
+
+
+
+1st is = Dell All themes and plugins 
+2ns is = Download astra theme then activate then customize and import complete website.
+3rd is =  Add starter template which we want . 
+
+
+
+Plugings : Theme khud recoemend kry gi agr na b kry to ye waly install krny h :        1.  Elementor   2. Wpforms	3. livemesh addons for elementor page builder
+or 
+ imp  :starter template see libraries sy .
+antispam plugin
+
+For sideBar  :
+plugin
+content aware sidebars
