@@ -1,0 +1,49 @@
+https://free-apis.github.io/#/browse
+
+is k bad categories a jati h then hmy jo  api chye usko kholna h then hmy 
+get starting py jana h then hmy us k bary mn info dy di jati h 
+
+then jo link uper api k lie dia hota h usko new tab mn kholna h eg : https://cat-fact.herokuapp.com 
+then us k nechy esi info likhi hoti h 
+ like endpoints py /facts wgra 
+wo link k agy likhna hota h  esy  
+
+
+https://cat-fact.herokuapp.com/facts
+
+
+ab is linnk ko kholna h or vscode py  jana h 
+
+
+
+const URL = "https://cat-fact.herokuapp.com/facts";
+const factpara = document.querySelector("#fact");   // ye  html ki screen py show krny k lie likha 
+const btn = document.querySelector("#btn");		// ye  html ki screen py show krny k lie likha 
+
+// fetch promise return krta h
+let promise = fetch(URL);
+console.log(promise);
+
+const getFacts = async () => {
+  // arrow fn asychronous function that returns a promise object
+  console.log("Getting Data...");
+  let response = await fetch(URL); // await ku k api time leti h upate hony k lie  or fetch url krty h taky idr response aye
+  console.log(response); // print  response  json format mn hota h 
+  let data = await response.json(); // ye line hmry response ko json mn convert kr deti  h jis sy hmra data  array ki form mn a jata h jo hm easily use kr skty h  
+  factpara.innerText = data[1].text; //  factpara.innerText  hmy o index py py jo text hoga wo dy ga
+};
+btn.addEventListener("click", getFacts);  // ye  html ki screen py show krny k lie likha 
+
+// screen shot lia h  json ajax  request  k  data  fetch krta h  or  api  k  data  fetch krta h  or  json  k  data  fetch krta h  
+
+
+
+2nd method  ye b h :  getfacts ki jaga ye  b kr skty h but wo better h async await walla 
+function getFacts() {
+    fetch (URL).then( (response) => {
+        return response.json();
+    }).then( (data) => {
+        console.log(data);
+        factpara.innerText = data[1].text; 
+    })
+}

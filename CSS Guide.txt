@@ -1,0 +1,648 @@
+													Chapter 0 
+CSS Stands For Cascading Style Sheets 
+1.   div. likhny sy div container open hota h 
+2. CSS use krny  k lie title k bad  style tag use kry gy esy 
+
+  <style>
+        body{
+            background-color: brown;
+        }
+    </style>
+or ksi link sy style uthana ho to style:css esy krna h     <link rel="stylesheet" href="style.css">				
+
+	
+											Chatpter 1 
+											Rule tb apply hota h jab selector match hota h 
+
+3.
+esy auto generate kr deta h 
+ 	section.red  <section class="red"></section>
+	#kchh b  		 <div id="second"></div> 
+	
+4. ID is always unique 
+5. 3Types to add CSS
+
+.<style Tag>  
+.Inline CSS
+.External CSS 
+
+6. # sy  ID ko Target Krty h
+Style esy 
+    #first{
+        background-color:aquamarine;
+}
+7. .sy class ko 
+specific word sy data wali line mn add krna ho css to 
+  .bg-blue{
+        background-color: blueviolet
+    }
+or us mn agr likha hua ka color chnge krna  h to esy
+
+.bg-blue{
+        background-color: blueviolet;
+ color:white;
+    }
+8. Eg : Agr hm ny H1 ka Written color  Change krna ho to just esy 
+<style>
+        h1{
+            color:red;
+        }
+    </style>
+OR us k bad us portion ka background  color chnge krna ho to 
+ <style>
+        h1{
+            color:red;
+        }
+        div{
+            background-color: antiquewhite;
+        }
+    </style>
+9. Element slector :
+it is used to select an element based off the target name 
+10.  Simple way to apply ID Selector 
+Body mn kch b esy likhna h  <div id="red">Ceck for color</div>
+then head m jaa k style mn esy 
+#red{
+            color:blue;
+            background-color: aquamarine;
+        }
+11. Aik Class Bnai
+ <span class="blue">first tag</span>
+    <span class="blue">second tag</span>
+    <span class="blue">third tag</span>
+
+usko acess k lie .sy title style mn ja k .sy acess esy
+  .blue{
+            background-color: blue;
+            color:white;
+        }
+12. Agr 1 Rule 2 ya us ys zaida chzo ko apply krna h to simple esy  ,
+												 seperator esy eg h1,h2,div etc
+  <h3>1Rule ksi or py b use kr ny ka mthod</h3>
+ab is py apply esy pechy 10 No py jo apply kiya bs { sy phly uska name likh dia 
+#red,h3{
+            color:blue;
+            background-color: aquamarine;
+        }
+13. * Can be used as universal selector to select all the elemnts 
+ *{margin: 0;
+  padding:0;} esy 
+
+14. Comments in  CSS
+	/*Comment*/
+
+
+
+													CHAPETR 2  COLORS AND BACKGROUNS
+
+
+
+15. Style Sheet Add through CSS 
+  CSS file ka jo name hoga href mn woi likhna h 
+<link rel="stylesheet" href="srtle.css">
+.red{
+ background-color:red;
+ color: white;
+}
+
+.green{
+    background-color: rgb(0, 128, 83);
+    color: aqua;
+}
+16. Color Values are 3 :(google py COlor pixer likho to aa jatay h )
+RGB  : rgb(koi b  3values with , )
+HEX  : it works like a rgb 
+HSL  :  
+
+17.  Gpa dalna css mn to height tag use 
+ eg :
+		height=250px;
+18.Background Color Property 
+    	background image property 	
+	eg : 
+ Specific Line py 
+background-image: url(baber.jpg); 
+background-repeat: no-repeat;
+            background-position-x: center; 
+or b  vs mn likhi hui h 
+  
+Full Background 
+body{
+            background-image: url(baber.jpg.jpg);
+        }
+19. BackGround Size Property 
+	Cover = Fits And No Empty Spaces are remain  background-size:cover ;  krny sy fit in box ho jaye gaa 
+		Contain = it will contain in way such that it is more Visible  background-size:contain; krny sy khali jaga bachy gi 
+				Auto	
+eg for All :
+ .container{
+            width: 534px;
+            height: 344px;
+            background-color: wheat;
+            border: 2px solid red;
+            background-image: url(baber.jpg.jpg);
+            background-repeat: no-repeat;
+           background-size:cover;
+           color: white;
+
+           /*  background-color: rgb(0, 255, 255, 0.581);*/   
+        }
+20.  Background Position Property :
+ background-position:right;
+ background-position:left;
+ background-position:top ;
+ background-position:bottom;
+ background-position:top right ;
+ background-position:top left;
+ background-position: Bottom right;
+ background-position:Bottom Left ;
+ background-position:center ;
+ETC 
+21. BackGround AttachMent Property : 
+22.Background ShortHand property :
+	background : color image repeat/norepeat fixed right tab ; esy spaces dy k 
+						
+
+
+
+
+						Chapter 3 BoX
+23.  Margin Border Padding Content 
+24. Total height seting 
+Total height  = height + top/bottom + top/bottom border  +top/bottom margin  
+25.   margin: 4px 2px 6px 1px ;
+            /*box margin ag alag set krna h to phly top right bottom left*/
+26. Border setting 
+	        border-width= 3px;
+            border-style: dashed ; 
+	border-color: blue;
+    border-radius: 20px;
+27. Margin Collaps:
+	jab 2 margins differnt elements sy overlap ya usk equivalent ya us sy bra ho to 
+28. Box Sizing :
+		Determines what out of padding and border is included in elements width and height  
+ background-color:orchid;
+            margin: 20px;
+            height: 20px;
+            padding: 2px;
+            border: 1px solid blue;
+            box-sizing: content-box;
+29. 					Prtce of chp 3
+Website Layout  Proper
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3  practice </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+header{
+    height: 66px;
+    background-color:black  ;
+    color: white;
+}
+.content{
+    background-color:red;
+    height: 90vh;
+	padding: 33px;
+}
+footer{
+    background-color: brown;
+}
+.center{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi facere corporis officiis aspernatur recusandae magni molestias velit! Impedit laborum rem laboriosam vel voluptatem eum fuga cum laudantium accusamus quas?
+    </div>
+
+    <footer>
+<p class="center"> Copyright sports game &copy</p>
+    </footer>
+</body>
+</html>
+				Chapter 4 Fonts and Disp 
+30.Display inline:
+		it takes space required by the element and no linebreak before and after .and setting of width and heiight is not allowed 
+31. Display Block:
+		it takes full space avialable in width and leaves a newline before and after the element 
+32.Display Inline-block :
+					similar to inline but setting height width margin and padding is allowed elements can sit near to each other 
+34.Display None vs visibity hidden 
+					with disp none the element is removed from document and flow its space is not blocked 
+	with visibilty hidden the element is hidden but its space is removed
+35. 1Line mn Display lana ho to 
+ display: inline;
+            width: 431px;
+            height: 1134px;
+            background-color:red;
+           Line mn likhy huy ko space deny k lie 
+ list-style: none;
+    padding: 0 23px;
+        }
+        .box2{
+            display: inline;
+            width: 431px;
+            height: 1134px;
+            background-color:blue;
+            
+36. agr apni mrsi ka width set krni h to 
+	display : inline  block krna hoga tb set hoga 
+37. Text Align :
+		use to set horizontal alingment of a text 	
+		text-align: center;
+38. Text Decoration Proprty:
+	text-decoration:underline etc;
+39. Text ka phla word bra ay apni mrzi ka krny k lie:
+		text-transform: capitalize;
+40. Line Height :
+	line-height: 10.0px ya apni mrzi ka koi b 
+41. Font size :	
+		font-size: 23px;
+        } apni mrzi sy
+42.Apni Mrzi ka font /likhai :
+				 font-family: Arial, Helvetica, sans-serif;
+or google sy copy krny  ka tareeqa  link sy lgana h
+43.Fonts:
+   font-size: 34px;
+            line-height: 1.3;
+            letter-spacing: 0.052;
+            font-weight: 800;
+44.Font Family : Specific family jiska pta hota 
+45. Generic Family : jo different fonts hoty hn diff names(broad families)
+	
+					Chapter 5 Size Position and List
+Relative Lenghts: reletive to other length
+46. em : reletive to parent size (give my parent size font)
+eg : 2boxes hn container waly ka size ko box k sath *ply krdo ab text ki value 16em ho jaye gi 
+  .container{
+            font-size: 4px;
+        }
+        .box{
+            font-size: 4em;
+
+        }
+47.rem: 	root font size(html ka font size)
+		font-size: 4rem;
+48. vw : 	
+		unit relative to 1% view portt width 
+		  width: 50vw;
+            	height: 50vh;
+			vw or vh set krny ka faida h k ksi b system py use kro to website ka layout kharab nai ho ga 
+
+49. % unit rrelative to parent element 
+50. Min-height, Max-height, Min Width, Max Width 
+	min-height: 50vh;
+	esy height width set krny sy elements ka size set rhy ga 
+51. The Position Property:
+Static: The default Position . top/bottom /left/right /Z-index has no effect.
+Relative:The top/bottom /left/right /Z-index will  now work. otherwise the element is in the flow of document  like static.
+position: relative;
+            top: 34px;
+            left: 34px;
+            bottom: 34px;
+            right:34px;
+Absolute: The element is removed from the flow and is relatively positioned to its first non-static top/bottom.
+Fixed: just like absolut except the element is positioned reletive to browser window 
+Sticky: The element is positioned based on user'scroll position.
+ padding: 25px; nav bar ko uper chipkany k lie 
+            background-color:black;
+            color: white;
+            position: sticky;
+            top:0; 
+
+jab position absolute hogi to z-index k  mtlb k nav bar k uper hmra chlta jaye ga div wala
+position: relative;
+            z-index: 3;
+					Chapter 6 Flex Box
+52. Float Preperty:
+			mtlb ksi b property ko left ya right ki trf move kr deti h mtlb ksi b daby ko right left agy pechy move krny ka tareeqa side by side 
+    .box1{
+            height: 234px;
+            width: 345px;
+            background-color: blue;
+            float: right;
+        }
+        .box2{
+            height: 234px;
+            width: 345px;
+            background-color: red;
+            float: right;
+        }
+float:inline-start;
+53. Clear Property:
+			it clears floats jo unsy phly h 
+		clear: right;
+Mtlb k mery right oy koi b element nai hoga
+
+54. What is FlexBox:	
+			Aims at a better way to layout align and distribute among items in a container.
+55.Flex direction property:
+				defines the direction towards which items are laid can be row,row-reverse ,column , column-reverse.
+3 4 Dabon ko column wise 1 line py krny k lie hm
+			flex-direction:column; use krty h 
+			lex-direction: row-reverse; daby ulty lany k lie 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .box1{
+            height: 234px;
+            width: 345px;
+            background-color: blue;
+            border: 2px solid black;
+           
+        }
+        .box2{
+            height: 234px;
+            width: 345px; 
+            background-color: red;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2 </div>
+    <div class="box1">Box 3</div>
+    <div class="box2">Box 4 </div>
+</div>
+</body>
+</html>
+56. flex Properties:
+Flex wrap: can be wrap , nowrap ,wrap-reverse , wrap items as needed with this property.
+	 flex-wrap: wrap;
+ flex-wrap: wrap-reverse;
+ Justify-Content:
+		justify-content: center; sb center krny k lie
+Align-items:
+		Align center(as per needed)
+Align-Content:
+		align a flex content's lines when there is a extra space in the cross axis.
+align-items: center;
+align-self: flex-end;
+				Chpter 7 Css Grid &Meta Business
+
+57. 	A css grid can be initialized using :
+		.container{
+				display:grid;	}
+	All direct children automatically becomes grid items.
+58. Grid Column gap property:
+			used to adjust the space between the colunmns of a css grid.
+59. Grid row gap:	
+			used to adjust the space between the rows of a css grid.
+eg .container{
+            display: grid;
+            background-color: yellow;
+            grid-row-gap: 9px;
+            grid-column-gap: 9px;
+60. Template mn gap dalny k lie :
+				grid-template-columns: auto auto ;
+
+61. Grid Gap Property:
+			shorthand property for grid row gap & grid column gap
+.container{
+		display:grid;
+		grid-gap:40px 100px;
+}
+62. Properties of grid container:
+			the grid-template-columns property can be used to specify the width of columns
+.container{
+		display:grid;
+		grid-template-columns:40px 100px auto ;
+}
+
+The grid-template-rows property can be used to specify the height  of rach row
+.container{
+		display:grid;
+		grid-template-columns:40px 100px ;
+}
+63. Dabon mn sy lines kam krna ya jesy html sy row/column span lgaty h wese e ye property css mn use hoti h 
+	.grid-item{
+		grid-column:1/5;	
+	}
+64.rows mn sy lines kam krna ya jesy html sy row/column span lgaty h wese e ye property css mn use hoti h 
+	.grid-item{
+		grid-rows:1/5;	
+	}
+64. Media Quries:
+		use to apply css only when a certain condition is true.
+syntax:
+	@media only screeen and (max-width:80px)
+{
+body
+{
+background:red;
+}
+}
+ .container{
+            background-color: red;
+            height: 34vh;
+        }
+        @media screen and(max-width:800px){
+            body{
+            background-color: brown;
+            }
+        }
+65. Bri screen py green screen choti py red or us sy choti py yellow krny k lie code
+ <title>Media Queries</title>
+    <style>
+        body{
+            background-color: green;
+
+        }
+        @media screen and (max-width:800px) {
+            body{
+                background-color: brown;
+            }
+           
+        }
+        @media screen and (max-width:600px) {
+            body{
+                background-color: yellow;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+			Chapter 8 : Animation Transition & Transform
+66.  Transform:	
+		are used to rotate queue move or scale elements  They are used to create 3D effect.
+67. Transform Property:
+			use to apply a 2D or 3D transformation  to an element
+2D = X axis 
+3D = Y axis
+68.Transform:
+egs:		transform: translate(134px , 56px) rotate(0.25turn);
+		 rotate(45deg);
+		  transform-origin: 0; tansformation kdr sy shuru ho usk lie origion use hota h 
+69. Scaling (likhai bri ya unchi nechi krny k lie )
+		transform: scaleX(4);
+		transform: scale(2, 2);
+		transform: scaleY(2);
+		 transform:skew(4deg,6deg);
+		 transform:skew(0deg,10deg);
+
+70. 3D Transform Methods :
+. Matrix :
+.rotateY():
+.rotateZ():
+71. Picture Ulti/sedhi vertical horizontal  krny k lie :(ye value apni mrzi ki set krni hogi )
+				transform:rotateX(500deg);
+				transform:rotateY(45deg);
+				transform:rotateZ(45deg);
+		
+71. Transition:	
+		used to change property vlaues smoothly ,over a given direction .
+Properties of tansition 
+Taransition Property : The property you want to transition. 
+Taransition Duration : Time for which you want transition to apply.
+Taransition-timing-function: how you want the property to transition.
+Taransition-delay: Specifies the delay for the the transition.
+
+      .box{
+            border: 2px solid black;
+            display: inline-block;
+           /* transform: translate(134px , 56px ) rotate(45deg);
+            transform-origin: 0;*/
+            width: 455px;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            
+        }
+        img:hover{
+           width: 56px;
+		}
+	transition: width 2s ease-in-out;
+ 	 transition: width 2s ease-in-out , height 4s ease-in;
+72. Animations:
+		used to animate css properties with more control 
+		we can use @keyframes rule to change  the animation from a given style to a new style .
+
+	@keyframes ak{
+		from{
+			width:20px;
+		    }
+		to{
+			width:31px;
+		   }
+		}
+73. Properties to add Animations :
+animation-none:			None of the Animation .
+animation-duration:		How Long as animation Run.
+animation-timing-function:	Determines speed curve of animation.
+animation-delay:		Delay for the start of animation.
+animation-iteration-count:	Number of times an animation should run.
+animation-direction :		Specifies the diection of animation.
+74. Usage of Aniamtion:
+<title>Animation</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            color: white;height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: widthAnimate;
+            animation-duration: 3s;
+	    animation-timing-function:ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-direction:alternate-reverse;
+        }
+        @keyframes widthAnimate{
+            from{
+                width: 300px;
+            }
+            to{
+                width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is me</div>
+    </div>
+</body>
+</html>
+75.Website layout or uper  line chalny k lie code:
+ <title>Animation</title>
+    <style>
+        .progress{
+            background-color: red;
+            height: 3px;
+            animation: load 1s ease-in-out  ;
+        }
+        *{margin: 0;
+        padding: 0;}
+        header{
+            height: 122px;
+            background-color: black;
+        }
+        main{
+            height: 903px;
+            background-color:blue;
+        }
+        @keyframes load{
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 9vw;
+            }
+            100%{
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+
+    </main>
+</body>
+</html>
+76.How to make our website Responsive Website:
+1st Step : Use Media Queries.
+

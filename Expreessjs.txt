@@ -1,0 +1,30 @@
+npm init -y in terminal 
+open expressjs.com 
+
+copy this : 	npm install express --save  		form website 
+ paste in terminal 
+
+
+then node module folder bany ga agr wo dell v ho jaye to koi issue nai 					npm  i			likhy gy terminal mn to wo dubara instal ho jaye ga 
+
+
+or yei website kholo to getting started py ye tareeka b btaya hua ha installing  ka
+
+
+copy hello word example : 
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
+
+usmn agr hmy isko apny server (google py chye to ye line likhni pry gi http://localhost:${port} )
+
+
+

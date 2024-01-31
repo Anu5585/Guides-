@@ -1,0 +1,36 @@
+<script src="https://cdn.tailwindcss.com"></script>
+npm install -D tailwindcss postcss autoprefixer   install in vs code but us sy phly node js install  krna pry ga 
+
+    <nav class="mx-4 flex">  esy classes lgani h mx-4 mtlb x sy 4 ka margin
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+ 
+<div class="container">
+        <h1 class="text-blue-900">
+            This is Blue  Text 
+        </h1>
+    </div>
+
+
+SetUp For Tailwind 
+1st step is open Tailwind css go to Using PostCss Copy Link :
+ npm install -D tailwindcss postcss autoprefixer 
+and install in teminal 
+
+2nd Step is us k nechy waly link ko copy krna h 
+npx tailwindcss init -p 
+or install then tailwind.config.js mn ja k cintent mn "*" lgana h 
+ 
+
+css = @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+Then Start npm run start 
+ 

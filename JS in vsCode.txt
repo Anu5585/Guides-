@@ -1,0 +1,115 @@
+			node in vs code 
+
+
+phly vs code kholna h then terminal open krna h udr folder ka name + file ka name likhna h phr is k bad likhna h : 
+			
+			npm init then enter 
+bagir kxh kiye huy enter enter kr k phr npm init -y
+
+usk bad hmy foran sy package.json file ban k mill jaye gi 
+
+
+https://www.npmjs.com/package/pdf-node is link sy ye nechy wala code copy kiya :
+
+npm i pdf-node
+
+
+ye link terminal mn paste krna h then enter us k bad 1 file open hoogi vscode mn 
+
+
+then again yei link kholna (how to use method: )h or ye copy krna h :
+//Required package
+var pdf = require("pdf-node");
+var fs = require("fs");
+
+// Read HTML Template
+var html = fs.readFileSync("template.html", "utf8");
+
+Now 1 new file banani h us k ander wo esy 
+
+template.html 
+
+or is file mn  jo new banai h 
+usi link sy copy kr k paste krna h wo ye h :
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <mate charest="utf-8" />
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <h1>User List</h1>
+    <ul>
+      {{#each users}}
+      <li>Name: {{this.name}}</li>
+      <li>Age: {{this.age}}</li>
+      <br />
+      {{/each}}
+    </ul>
+  </body>
+</html>
+
+
+
+phr step   3 :
+udr sy ye copy kr  k main 1st file mn paste krna h jis mn hmny 1st step wala copy kiya  tha 
+
+ var options = {
+        format: "A3",
+        orientation: "portrait",
+        border: "10mm",
+        header: {
+            height: "45mm",
+            contents: '<div style="text-align: center;">Author: Shyam Hajare</div>'
+        },
+        footer: {
+            height: "28mm",
+            contents: {
+                first: 'Cover page',
+                2: 'Second page', // Any page number is working. 1-based index
+                default: '<span style="color: #444;">{{page}}</span>/<span>{{pages}}</span>', // fallback value
+                last: 'Last Page'
+            }
+        }
+    };
+
+
+
+step 4 us k nechy ye paste krna h :
+
+var users = [
+  {
+    name: "tom",
+    age: "21",
+  },
+  {
+    name: "dick",
+    age: "23",
+  },
+  {
+    name: "harry",
+    age: "29",
+  },
+];
+var document = {
+  html: html,
+  data: {
+    users: users,
+  },
+  path: "./output.pdf",
+  type: "pdf",
+};
+
+
+step 5 us k nechy ye paste krna h :
+
+pdf(document, options)
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+
+

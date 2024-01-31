@@ -1,0 +1,2035 @@
+			 javascript in Raplit 
+1. open replit and goto my repples select language in which you want and name your repple like    for java ( Node.js ) and start .
+				
+				Variables :
+
+2.  variable declare krny k lie let krna prta h jesy k eg: or fn call like cpp
+   let/var   a = 67 //a contains 67
+   console.log(a)
+
+   Agr a = "Anas"  kro to iski type ab string ho jaye gi or again woi function call krni 
+   prti h to print ho jaye ga .
+
+3.  Rules for naming a variable  .
+
+-> letters ,digits , underscores & $sign allowed.
+-> must begin with a $ , _ c , _ , or a letter .
+-> javascript reserved words cannot be used as a variable name. 
+-> It is CaseSensitive : Anas & anAs are different variable .
+
+4. ADD/<MUL/SUB/DIV numbers like :
+ a = 2 + 2
+console.log(a)
+
+ a = 2 - 2
+console.log(a)
+
+ a = 2 * 2
+console.log(a)
+
+ a = 2 / 2
+console.log(a)
+
+Difference between Let and var.
+5. console.log("JS Tutorial 3 : var , Let and const")
+jab esy blog ho or var hoga to print kch ye hoga :
+var a = 5;
+var b = "Annas";
+{
+  var b = 'this'
+  console.log(b)
+}
+console.log(b)
+
+output: this
+	this
+6. or jab let mn change krdo to uska result kch ye hoga :
+output: this
+	Annas
+
+Let sy Blocks ko variables bnaya ja skta h(let can be updated but not re-declared)
+ or 
+var sy kahi b change kiya ja skta h(it can be updated & declare within its scope )
+
+
+7.  const koi b change nai kr skta . like 
+
+	const author = "Annas"
+8. Premitive data types are 7 : NNSSBBU
+N = Null
+N = Number
+S = Symbol
+S = String
+B = Boolean
+B = BigI Int 
+U = Undefined
+
+8. Eg : 
+// nn bb ss u
+let a = null;
+let b = 345;
+let c = true; //can also be false 
+let d = BigInt("567")
+let e = "Annas "
+let f = Symbol("I am a nice Symbol")
+let g = undefined 
+console.log(a,b,c,d,e,f,g)
+Output: 
+ sab 1 line mn aa ajye gy
+
+9. Ksi ki b  data type pata krwny k lie 
+		console.log(typeof jo b var dec kiya hoga )
+
+
+10.  Objects in js = key value pairs and these are non-primitive data type
+
+const item =
+  {
+  "Annas" : true,
+  "Khalid ": false ,
+  "Mehmood ": 67,
+  "AK" : undefined
+}
+console.log(item["Annas"])
+Output:
+	true 
+or [idr inmn sy jo b likhy gy usk according e aye ga ] Lookup kr skty h 
+
+
+11. Ksi line ko nechy copy krny k lie ALT + SHIFT + ⬇️
+
+12. dictionary bna k print esy :
+
+
+const dict = {
+  appreciate :  "reccogonize  full worth ." ,
+  love : "Affection belonging ." 
+  
+}
+syntax for print : console.log(dict)
+or
+specific word print : console.log(dict.love)
+			
+
+					operators and expressions
+13. console.log("operators in js ")
+let a = 65;
+let b = 45;
+console.log("a+b = ", a+b)
+console.log("a-b = ", a-b)
+console.log("a*b = ", a*b)
+console.log("a/b = ", a/b)
+console.log("a**b = ", a**b)
+console.log("a%b = ", a%b)
+console.log("a++ = ", a++)
+console.log("b++ = ", b++)
+	
+
+	let a = prompt ("Hey Whats your age ?")
+Prompt ki Hamesha type jo hoti h wo string hoti h usko convert krny k lie esy krna h
+a = Number.parseInt (a)
+	let b =alert("hey")
+					Conditional Expressions 
+14. if 
+    else
+    else if
+
+let a = prompt ("Hey Whats your age ?")
+a = Number.parseInt (a)
+console.log(typeof a )
+if(a<0)
+{
+  alert("This is an invalid age ")
+}
+else 
+{
+  alert("Sorry You are elder")
+}
+
+
+
+
+EG:
+// Chp 2 PS
+// Q1
+let age = prompt("what is your age ")
+if(age>10 && age<20)
+  console.log("Your age lies between 10 and 20")
+else{
+  console.log("Your age doesnot  lies between 10 and 20")
+}
+
+
+
+Switch:
+	let age = prompt("what is your age ")
+age= Number.parseInt(age)
+switch(age)
+  {
+    case 12:
+      console.log("Your age is 2")
+      break
+    case 13:
+      console.log("Your age is 3")
+      break
+    case 14:
+      console.log("Your age is 4")
+      break
+    case 15:
+      console.log("Your age is 5")
+      break
+      default :
+      console.log("Your age is too small")
+  }
+
+
+			For Loops 
+
+FOR IN LOOP  : object ki keys ko loopin krta h 
+FOR OUT LOOP : values k through loop 
+WHILE LOOP :
+	
+	let n = prompt("Enter the value of  n ")
+n =  Number.parseInt(n)
+let i = 0 ;
+while (i<n)
+  {
+    console.log(i)
+    i++;
+  }
+
+	
+DO-WHULE LOOP:
+
+
+//  Do While Loop
+let n = prompt("Enter the value of  n ")
+n =  Number.parseInt(n)
+let i = 10 ;
+
+  do
+  {
+    console.log(i)
+    i++;
+
+    
+    while (i<n)
+
+
+for loop for addition
+
+// for(let i =10;i>0;i--)
+//   {
+//     console.log(i)
+//   }
+// program to add first n natural numbers 
+let sum = 0
+let n = prompt("Enter the value of N")
+n = Number.parseInt(n)
+for(let i =0;i<n;i++)
+  {
+    sum+=(i+1)
+   
+  }
+ console.log("Sum of first " + n + "natural Num is " +sum)
+
+For In Loop: 
+
+let obj ={
+  annas : 90,
+  aswad: 80,
+  hamza :70,
+  namra :60
+  
+}
+for(let a in obj)
+  {
+    console.log("Marks of " + a + "are " + obj[a])
+  }
+
+
+
+For of loop:
+
+for of loop
+for(let b of "Ak")
+
+					Functions
+
+
+eg = avg in fns
+
+let a = 1;
+let b = 2;
+let c  =  3;
+console.log("avg of  a and b is ",(a+b)/2)
+console.log("avg of  b and c is ",(a+b)/2)
+console.log("avg of  a and c is ",(a+b)/2)
+
+
+
+
+function  onePlusAvg(x,y)
+{
+console.log("Done")
+
+  return 1 +  (x+y)/2
+}
+let a = 1;
+let b = 2;
+let c  =  3;
+console.log("avg of  a and b is ",onePlusAvg(a,b))
+console.log("avg of  b and c is ",onePlusAvg(b,c))
+console.log("avg of  a and c is ",onePlusAvg(a,c))
+
+
+
+Round Off krny k lie       return Math.round(1 +  (x+y)/2)
+
+
+
+
+Strings 
+
+Double quote syntax = 
+Single quote syntax = 
+Template Literals   = 
+
+
+
+let name = "annas"
+console.log(name.length)
+console.log(name[0])  //esy b name k spell wgra nikal skty hh 
+console.log(name[1])  //esy b name k spell wgra nikal skty hh 
+let friend = 'Khalid'
+console.log(friend)
+
+
+// Template Literals 
+
+let boy1 = "Annas"
+let boy2 = "Khalid"
+//iska mtlb h k khalid is a friend of annas
+let sentence = `${boy1} is a friend of ${boy2} `//ye bactics hoty h 1 k ssath waly button py ${} krny sy names k sath print hoga agr ye nai lgya to boy 1 boy 2 likha aye ga
+console.log(sentence )
+
+// Escape sequence charters 
+let fruit = 'Bana\'na'   //single quote k andr or escape sequence  1or quote use krny sy chl jaye ga
+console.log(fruit )
+
+
+Methods of strings 
+
+let name = "Annas"
+console.log(name.length)
+//Text ko Capitalize krna k lie ese fn call krna h 
+console.log(name.toUpperCase())
+console.log(name.toLowerCase())
+
+// sting ko torny k lie  mtlb string sy kch words uthna k lie 
+console.log(name.slice(2,4))
+//replace krna
+console.log(name.replace("Annas" , "anas"))
+
+
+
+Arrays 
+
+is a collection of items 
+
+// let a= [ 1, 2 , 3 , 4 , 5 ]
+// // console.log(a)
+// // console.log(a[4])
+// for (let a = 0; a < 10; a++) {
+//   console.log(a)
+// }
+
+
+// Methods of arrays 
+let num = [1,2,3,4,5,6,7]
+let b = num.toString()//b is now a string
+console.log(b)
+
+// join method 
+let c = num.join("_")
+console.log(c ,typeof c)
+
+// pop method 
+num.pop()
+console.log(num) //pop mtlb last wala nikal deta h 
+
+//push
+num.push(55)
+console.log(num) //pop mtlb last wala nikal deta h 
+
+//shift  removes first element
+num.shift()
+console.log(num) //pop mtlb last wala nikal deta h 
+
+//unshift adds new elemnt
+
+num.unshift(78)
+console.log(num) //pop mtlb last wala nikal deta h 
+
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let num_more = [41, 42, 34, 4, 54, 46, 47, 48, 49]
+let num_even_more = [411, 342, 344, 455, 654, 846, 4789, 948, 499]
+// delete num[3]
+console.log(num)
+let newArray = num.concat(num_more, num_even_more)
+
+console.log(newArray)
+console.log(num, num_more)
+
+
+
+// sortinng method 
+let num = [31, 22, 300, 4, 5, 46, 7, 8, 9]
+num.sort()
+console.log(num)
+
+
+assending order sorting
+
+let compare = (a,b)=>
+  {
+    return a- b
+  }
+let num = [31, 22, 300, 4, 5, 46, 7, 8, 9]
+num.sort(compare)
+console.log(num)
+
+desending method sorrting 
+
+let compare = (a,b)=>
+  {
+    return a- b
+  }
+let num = [31, 22, 300, 4, 5, 46, 7, 8, 9]
+num.sort(compare)
+console.log(num)
+
+
+
+// Splice and slice 
+//splice = new arrays items ko add krwata h there is 4 arguments of splice number.splice(2(postion k kdr add krna h ),1(ktny elemets sy remove krna h ),(23,24(or jo jo elements  add krny h )))
+let numm = [31, 22, 300, 4, 5, 46, 7, 8, 9]
+numm.splice(2,3,55,85)
+console.log(numm)
+
+//slice = out a piece from an array it creates a new array 
+let nummm = [313, 212, 3000, 154, 5856, 1546, 247, 268, 9000]
+nummm.slice(3)
+console.log(nummm)
+
+
+For Loop with Array
+
+
+let num = [3,6, 2,8,9]
+for (let i= 0; i<num.length;i++)
+  {
+    console.log(num[i])
+  }
+
+//for each loop
+// num.forEach((element) =>{
+//   console.log(element * element )
+// })
+
+
+// Array.from
+// if we have html collection then hm us py foreach loop nai lga skta us  ppyy array.from chlana pry ga array.from kya krta h =ye us html collection sy new array bna k dy dy ga 
+let name = "annas"
+let arr = Array.from(name)
+console.log(arr)
+
+// for off loop
+for (let i of num) {
+  console.log(i)
+}
+
+// for in loop
+
+for (let i of num) {
+  console.log(i)
+}
+
+
+prtce
+
+// q1
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// let a = prompt("Enter a Number")
+// a = Number.parseInt(a)
+// arr.push(a)
+// console.log(arr)
+
+// q2
+
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// let a;
+// do 
+//   {
+//      a = prompt("Enter a Number")
+// a = Number.parseInt(a)
+// arr.push(a)
+// console.log(arr)
+//   }
+//   while(a!=0);
+// console.log(arr)
+
+// q3
+// let arr  = [1, 2, 30, 4, 50, 6, 7, 83, 670]
+// let n = arr.filter((x)=>
+//   {
+//     return x%10 == 0
+//   })
+// console.log(n)
+// // q4
+// let arr  = [1, 2, 30, 4, 50, 6, 7, 83, 670]
+// let n = arr.map((x)=>
+//   {
+//     return x*x 
+//   })
+// console.log(n)
+
+// q5
+let arr  = [1, 2, 3, 4, 5, 6, 7, 8]
+let n = arr.reduce((x1, x2)=>
+  {
+    return x1*x2 
+  })
+console.log(n)
+
+
+
+
+				JawaScript in browser 
+
+console
+
+console.log(console) //listening k console k kn kn sy tags hoty ha 
+
+console.error("This is the error")
+VM955:1 This is the error
+(anonymous) @ VM955:1
+undefined
+console.ass
+undefined
+console.assert(5>1)
+undefined
+console.assert()
+VM1076:1 Assertion failed: console.assert
+(anonymous) @ VM1076:1
+undefined
+console.clear
+ƒ clear() { [native code] }
+
+obj = {a:1 ,b:2 ,c:3}
+{a: 1, b: 2, c: 3}
+console.table(obj)
+VM1295:1 
+(index)
+Value
+a	1
+b	2
+c	3
+Object
+undefined
+console.warn("Dont ")
+VM1336:1 Dont 
+undefined
+console.info("This is info")
+VM1402:1 This is info
+undefined
+
+assert:ƒ assert()
+clear:ƒ clear()
+context:ƒ context()
+count:ƒ count()
+countReset:ƒ countReset()
+createTask:ƒ createTask()
+debug:ƒ debug()
+dir:ƒ dir()
+dirxml:ƒ dirxml()
+error:ƒ error()
+group:ƒ group()
+groupCollapsed:ƒ groupCollapsed()
+groupEnd:ƒ groupEnd()
+info:ƒ info()
+log:ƒ log()
+memory:MemoryInfo {totalJSHeapSize: 26000000, usedJSHeapSize: 13400000, jsHeapSizeLimit: 2190000000}
+profile:ƒ profile()
+profileEnd:ƒ profileEnd()
+table:ƒ table()
+time:ƒ time()
+timeEnd:ƒ timeEnd()
+timeLog:ƒ timeLog()
+timeStamp:ƒ timeStamp()
+trace:ƒ trace()
+warn:ƒ warn()
+Symbol(Symbol.toStringTag):"console"
+
+
+				Alert Prompt Confirm
+
+// alert("Your Script Works!")
+alert("Enter the value of a")
+let a = prompt("Enter A here ", "456")//def value b dy skty h wese 
+document.write(a)
+a = Number.parseInt(a )// string ko int mn convert krta h 
+alert("You Entered A of type " + typeof a)
+let write = confirm("Do You Want to write it on page ")
+if (write )
+{
+  document.write(a)
+}
+else
+{
+  document.write("Plz allow me to write")
+}
+
+document.body.style.background = "orange"   //javascript sy backgound clor chnge krty hh
+
+				BOM , DOM
+
+BOM = is a broswer object model (represnts additional object provided by  the browser )
+DOM = is a Document object model (apky pury html page ko aik javaScript object bana dia gya h usko document name dy dia gya h  )
+
+
+
+let age = prompt("Enter Your age ")
+age = Number.parseInt(age)
+
+const canDrive =(age)=>
+  {
+   return age>=18?true:false
+  }
+if(canDrive(age))
+   {
+  alert("Yes you can Drive")
+   }
+else
+{
+  alert("You cannot drive")
+}
+
+
+Dom Tree = jo html hoti h usko convert kr dia gya h 1 javascript object mn 		(Like html mn hmri jo body head title hota h wo DOM k andr a jata h )
+
+document.body = likhny sy page body tag aye ga
+document.documentElement = page HTML tag aye ga 
+
+Children in js
+how to access children using DOM in JS
+
+
+like = console.log(Document.body.firstChild)
+or
+sb child notes ko access kry ga ye = elem.childNodes[0] === elem.firstChild
+ 
+Properties odf DOM Collection: 
+
+
+Table Links 
+
+let t = document.body.firstElementChild.firstElementChild
+console.log(t)
+console.log(t.rows)
+console.log(t.caption)
+console.log(t.tHead)
+console.log(t.tFoot)
+console.log(t.tBodies)
+console.log(t.rows[0])
+
+
+
+How  to search diom 
+Document.getElementById() : id = "firstcardtitle " like esy id dy di but shirt ye h  k ab ye id ksi or element ko nai dy skty 
+eg = 
+//chane the cardtitle to red
+let ctitle = document.getElementById("firstcardtitle") //ye
+ctitle.style.color = "purple"
+
+
+
+
+Document.getElementByClassName()
+querySelector()
+querySelectorAll()
+
+searching the Dom
+
+examples =
+
+
+//chane the cardtitle to red
+let ctitle = document.getElementById("firstcardtitle")
+ctitle.style.color = "purple"
+
+
+let ctitles = document.querySelectorAll(".card-title")
+console.log(ctitles)
+
+ctitles[0].style.color = "red"
+ctitles[1].style.color = "green"
+
+document.querySelector(".this").style.color =  "red"
+document.querySelector(".this").style.background =  "red"
+
+document.log(document.getElementByTagName("a"))
+document.log(document.querySelector(".card-title").getElementByTagName("a"))
+
+console.log(document.getElementsByName("search"))
+
+
+matches = btata h  k kya aik element given css selector ko match kr ra h ya nai 
+elem.matches
+elem.closest 
+elem.contain
+eg=
+let id1 = document.getElementById(id1)
+console.log(id1)
+console.log(id1.matches(".class"))
+console.log(id1.matches(".box"))
+console.log(sp1.closest(".box"))
+
+Events and Dom Prooperties:
+
+agr properties dekhni ho to :console.dir(document.getElementsByTagName('span')[0]);
+agr tag dekhna ho to : console.log(document.getElementsByTagName('span')[0]);
+
+tag name : only exsist for element node  
+node name : defined for array node (text , column etc)
+
+let x = document.getElementsByTagName('span')[0]
+console.log(x)
+let y = document.getElementsByTagName('span')[0]
+console.dir(x)
+console.log(document.body.firstChild.nodeName)
+console.log(document.body.firstElementChild.nodeName)
+
+first.innerHTML
+'I am span'
+
+Attributes :
+Set :	
+Get :
+
+let first = document.getElementById("first");
+let a = first.getAttribute("class")
+console.log(a)
+console.log(first.hasAttribute("class"))
+console.log(first.hasAttribute("style"))
+// first.setAttribute("hidden" , "true" )
+// first.setAttribute("class", "true sach ")
+// first.removeAttribute("class", "true sach ")
+console.log(first.Attributes)
+
+
+
+Insertion Methods
+
+
+let a = document.getElementsByTagName('div')[0]
+  
+// a.innerHTML = a.innerHTML + ' <h1>Hellow Word </h1>';
+//agr esy nechy waly method sy likhy gy to hm for loop ko kam mn lay skty h 
+//   let div = document.createElement('div');
+//   div.innerHTML =' <h1>Hellow Word!</h1>';
+// a.appendChild(div);
+
+//
+  let div = document.createElement('div');
+  div.innerHTML =' <h1>Hellow Word!</h1>';
+// a.append(div);
+// a.prepend(div);
+// a.after(div);
+// a.replaceWith(div);
+
+
+Insert  Adjacent HTML
+Insert Adjacent Element 
+Insert Adjacent Text 
+
+
+first.insertAdjacentHTML('beforebegin', '<div class= "test"> beforebegin </div>');
+first.insertAdjacentHTML('beforeend', '<div class= "test"> beforeend </div>');
+first.insertAdjacentHTML('afterbegin', '<div class= "test"> afterbegin</div>');
+first.insertAdjacentHTML('beforebegin', '<div class= "test"> beforebegin </div>');
+
+
+
+
+changing html classes using javascript
+(className and ClassList)
+
+first.className = "text-black red "
+first.classList.add("red")
+first.classList.remove("red")
+first.classList.contains("red")
+first.classList.toggle("red")
+
+
+Set TimeOut  = jab hmy kch time k bad apni js ko execute krna hoga
+Set TimeInterval = jb hmy  bar bar after a set period of  time apni js ko execute krna hoga 
+
+
+agr alert wgra mn ya ese cheezo mn dalna ho to 
+
+alert("Hello")
+
+setTimeout(function() {
+  alert("I am inside of setTimeOut")
+}, 2000
+)
+
+
+
+document.write("Hello")
+
+let a = setTimeout(function() {
+  alert("I am inside of setTimeOut")
+}, 5000)
+let b = prompt("Do You want to run the settimeout")
+
+if("n" == b)
+{
+  cleartimeout(a)
+}
+//5 sec = 5000 , 1 sec = 1000 esy hota h
+clearTimeout(a)  // ye krny ka mtlb k timer ko stop krna h 
+console.log(a)
+
+
+setTimeout= iska mtlb k itny second k bad isko run krdo 
+ setTime Interval = har 1 sec k bad iskko run krwata h 
+
+// setInterval(function(){
+//   alert("setinterval")
+// },3000)
+
+
+Browser Events : is a signal that something has happends .
+		 All the Dom Nodes generatte such signals .
+Dom Events = Mouse /keyboard/form element/Document events  
+
+ <div class="container">
+    <button OnClick="alert('Hello')">Click me</button>
+  </div> 
+OR 
+  <div class="container" onmouseenter="console.log('container ke ander mouse aa gaya ')"
+    onclick="console.log('container mn click hua')">
+    <button OnClick="alert('Hello')">Click me</button>
+  </div>   google console mn ja k dekh skty h ese events ko handle krtyy hn 
+
+Another Method to handle event :
+
+let a = document.getElementsByClassName("container")[0]
+a.onclick = () => {
+  let b = document.getElementsByClassName("container")[0]
+  b.innerHTML = "Hellow Word!"
+}
+
+
+AddEventListner = is used to assign multiple handlers to an event.
+RemoveEventListner= 
+
+
+btn.addEventListner('click', function(e) {
+  alert("Hello word 1!")
+})
+
+btn.addEventListner('click', function(e) {
+  alert("Hello word 2!")
+})
+
+let a = prompt("Your Fav Num?");
+
+if(a=="2")
+{
+  btn.removeEventListner('click', function(e)
+ {
+                          alert("Hello word 1!") 
+ })
+}
+  
+
+
+Synchronious   :   actions are the actions taht initiate and finish one-by-one. 
+eg:
+// //Syncronous programming
+// let a = prompt("What is your name? ");
+// let b = prompt("Your Age is ??");
+// let c = prompt("Your fav color??");
+
+// console.log(a+ " is " + b + " Years old and his Fav color is "+ c  );
+
+ASynchronious   :  actions are those actions that are initiate now and they are finished now .
+eg:
+//Asynchronous Programming
+console.log("Start")
+
+setTimeout(function(){
+console.log("I m good");                      
+},3000
+          )
+console.log("End")
+
+
+Callbacks :  functions is a function passed into another function as an argument which is then envolved  inside the outer fn to complete an action .  
+eg:
+ loadScript('https://cdn.harry.com',(script)=>{
+alert('script is loaded')
+alert(script.src)
+});
+
+live exp:
+// CallBacks
+
+
+function loadScript(src, callback) {
+  let script = document.createElement("script");
+  script.src = src;
+  script.onload = function() {
+    console.log("Loaded script with SRC: " + src)
+    callback(null,src);
+  }
+  document.body.appendChild(sccript);
+
+}
+function hello() {
+  alert('Hello');
+}
+function goodmorning() {
+  alert(' goodmorning');
+}
+loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js", hello)
+
+
+how to handle errors in callbacks :
+script.onerror = function(){
+console.log("Erorr loading script with SRC: " + src);
+callback(new Error("Src got some error "))
+}
+document.body.appendChild(script);
+
+
+
+function goodmorning() {
+  if (error) {
+    console.log(error)
+    sendEmergencyMessageToCeo();
+    return
+  }
+}
+alert(' goodmorning');
+
+loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js", goodmorning)
+
+how to run loadScript fn:
+
+loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js", goodmorning)
+
+
+callback Hell : 
+Pyramid of Doom : mn code horizontally right side py grow krta jata h  iska solution hota h = promises.
+
+
+What is promises?   = solution of callbacks hell
+
+
+let promise = new Promise(function(resolve, reject)
+                          {
+alert("Hello")
+                            resolve(56)
+                          })
+console.log("Hello one")
+setTimeout(function() {
+  console.log("Hello Two in 2 Sec")
+}, 2000)
+console.log("My |Name is " + "Hello Three")
+console.log(promise) //it is a promise for working of code
+//there are 2 things in promise = state and result
+//fetch  google.com homepage  ==> console.log("google.com homepage done")
+//fetch  data from the data api
+//fetch  pictures from the server
+// print downlaoding
+// Rest of the script
+
+
+when a promise is fullfilled As Resolve / As Rejected 
+
+.then()
+.catch()
+
+
+//syntaxx of promise
+let p1 = new Promise((resolve, reject)=>{
+  console.log("Promise is pending")
+  setTimeout(()=>{
+    // console.log("I am promise and i am accepted ")
+    resolve(true)
+  }, 5000)
+})
+
+// console.log(p)
+
+
+//syntaxx of promise
+let p2 = new Promise((resolve, reject)=>{
+  console.log("Promise is pending")
+  setTimeout(()=>{
+    // console.log("I am promise and i am rejected ")
+    reject (new Error("I am an error "))
+  }, 5000)
+})
+
+p1.then((value)=>{
+  console.log(value)
+})
+
+p2.then((value)=>{
+  console.log(value)
+},(error)=>{
+  console.log(error)
+})
+// console.log(p1, p2)
+
+//error nai ana chye us k lie 
+// p2.catch((error)=>{
+//   console.log("some error occured in p2")
+// })
+
+
+
+promises chaining : 
+How to chain promises : jesy k 1 .then() ka result next .then() mn uska next k .then() mn esy hota h 
+
+let p1 =new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    console.log("Resolved after Two Seconds")
+    resolve(56)
+  },2000)
+})
+p1.then((value)=>{
+  console.log(value)
+
+
+  let p2 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+    resolve("Promise 2")  
+    },3000)
+    
+  })
+  return p2
+  
+})
+.then((value)=>{
+  console.log("We are done")
+  return 2
+})
+.then((value)=>{
+  console.log("100%Done")
+})
+
+Write loadScript with promises function
+
+const loadScript = (src) => {
+  return new Promise((resolve, reject) => {
+    let script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = src;
+
+    // Append the script element to the <body> of the document
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      resolve(1);
+    };
+
+    script.onerror = () => {
+      reject(0);
+    };
+  });
+};
+
+let p1 = loadScript("https://localhost:3000/index.js");
+p1.then((value) => {
+  console.log(value);
+}).catch((error) => {
+  console.log("We are sorry we are having problems");
+});
+
+
+how to attach multiple handlers with one promise
+
+let p1 = new Promise((resolve, reject)=>{
+  // alert("Hey I am not resolved")
+  setTimeout(()=>{
+    resolve(1);
+  },2000)
+})
+
+
+p1.then(()=>{
+  console.log("Hurray ")
+  return new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve (45)
+    },6000)
+  })
+})
+.then((value)=>{
+  console.log(value)
+})
+
+p1.then(()=>{
+  console.log("Congratulatons this promise is now resolved")
+})
+
+Promise Api
+Methods:
+Promise.all() : 
+
+let  promise_all = Promise.all([p1,p2,p3])
+promise_all.then((value)=>{
+  console.log(value)
+})
+
+
+promise.allSettled(): 
+let  promise_all = Promise.allSettled([p1,p2,p3])
+promise_all.then((value)=>{
+  console.log(value)
+})
+
+promise.race(): 3eeno mn sy jo phly ho jaye 
+
+let  promise_all = Promise.race([p1,p2,p3])
+promise_all.then((value)=>{
+  console.log(value)
+})
+
+iski complete  example :
+
+
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Value 1 ");
+  }, 2000)
+});
+
+let p2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Value 2 ");
+    // reject(new Error("Error"));
+  }, 4000)
+});
+
+let p3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Value 3 ");
+  }, 6000)
+});
+
+// p1.then((value) => {
+//   console.log(value)
+// })
+
+// p2.then((value) => {
+//   console.log(value)
+// })
+
+// p3.then((value) => {
+//   console.log(value)
+// })
+
+//jab 3eeno ho jaye to 3eeno ko 1 sath dekhny ka tareeqa : = promise.all() sy
+//esy :
+// let  promise_all = Promise.all([p1,p2,p3])
+// let  promise_all = Promise.allSettled([p1,p2,p3])
+let  promise_all = Promise.race([p1,p2,p3])
+promise_all.then((value)=>{
+  console.log(value)
+})
+
+
+Async await  = mtlb k apny code ko wait krwa sktry hn apnu fn ko async declare ker daty   h us k ANDR  alag alag piece of codes bna k or unki return value ka wait krty h 
+
+hum ksi b fn ko async bna skty h or us k bad promise ko await krwa skty h 
+
+
+syntax of Async Function = 
+
+async function annas() {
+  return 5
+}
+annas().then((x) => {
+  alert(x)
+})
+
+1 tareeqa h async ka=
+async function annas() {
+let weather = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("30Deg ")
+  },2000)
+})
+
+
+let traffic = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Rushi ")
+  },2000)
+  
+})
+
+
+
+weather.then(alert)
+traffic.then(alert)
+}
+
+console.log("Welcome to WT")
+annas()
+
+2ra tareeqa(better) = 
+
+let weaTher = await  weather
+  let traFFic = await traffic
+  return [weaTher , traFFic]
+
+iski cmplete ex:
+
+async function annas() {
+let weather = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("30Deg ")
+  },2000)
+})
+
+
+let traffic = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Rushi ")
+  },2000)
+  
+})
+
+
+
+// weather.then(alert)
+// traffic.then(alert)
+
+  let weaTher = await  weather
+  let traFFic = await traffic
+  return [weaTher , traFFic]
+}
+
+console.log("Welcome to WT")
+let a  = annas()
+console.log(a)
+
+Error Handling: 
+syntax :
+
+
+try{
+    console.log(annas)
+}
+catch(error){
+  console.log(error)
+}
+
+ex:
+
+setTimeout(() => {
+  console.log("hacking Wifi... plz wait")
+}, 1000)
+
+
+try{//synchronous wala  handle hoga  agr setTimeout() k andr try catch kiya to wo ho jaye ga  wrna error aye ga try catch jo h wo Asynchronous wala hoga just
+setTimeout(()=>{
+   console.log(annas)
+},2000)
+}
+catch(error){
+  console.log(error)
+}
+setTimeout(() => {
+  console.log("fetching username and password... plz wait")
+
+}, 2000)
+
+setTimeout(() => {
+  console.log("fetching username and password Again... plz wait")
+}, 3000)
+
+
+setTimeout(() => {
+  console.log("Hacking Facebook... plz wait")
+}, 4000)
+
+
+
+Error Object(how it works) : for all the builtin errors the error object has two main parts = name and message
+Custom Error :
+eg syntax of 
+name and message = 
+
+try {
+  annas
+}
+catch (error) {
+  console.log(error.name)
+  console.log(error.message)
+}
+
+
+How to through  custom error>
+try {
+  // throw new Error("Annas Is good")
+  console.log(annas)
+  throw new ReferenceError("Annas Is good")
+}
+catch (error) {
+  console.log(error.name)
+  console.log(error.message)
+  console.log(error.stack)
+}
+
+
+another example :
+
+
+
+try {
+  let age = prompt("Enter Your Age")
+  age= Number.parseInt(age)
+  if(age>120)
+  {
+     throw new ReferenceError("Its Difficult to reach ") 
+  }
+  // throw new Error("Annas Is good")
+  console.log(annas)
+
+}
+catch (error) {
+  console.log(error.name)
+  console.log(error.message)
+  console.log(error.stack)
+}
+console.log("The script is still running")
+
+Finally Clause :
+try {
+  let a = 0
+  console.log(program)
+  console.log("Program Ran ")
+}
+catch (err) {
+  console.log("This is error")
+  console.log(p)
+}
+finally {//is used for cleanUp
+  console.log("I am a good Boy ")
+}
+
+another example: 
+ 
+const f = () => {
+
+  try {
+    let a = 0
+    // console.log(program)
+    console.log("Program Ran ")
+  }
+  catch (err) {
+    console.log("This is error")
+    console.log(p)
+  }
+  finally {//is used for cleanUp
+    console.log("I am a good Boy ")
+  }
+}
+f()
+
+
+
+
+
+
+prtc:
+
+const loadScript = async (src)=>{
+  return new Promise((resolve, reject )=>{
+    
+  
+  let script =document.createElement("script")
+  script.src  = src
+  script.onload = ()=>{
+    resolve(src + "Done Sucess")
+  }
+    document.head.append(script)
+})
+}
+const main2 = async ()=>{
+let a = await  loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js")
+  console.log(a)
+}
+main2()
+
+
+Network request and sharing chp
+Fetch Api : 
+syntax:
+let p = fetch("https://www.weatherapi.com/")
+p.then((value1)=>{
+  return value1.json
+})
+.then((value2)=>{
+  console.log (value2)
+})
+
+Fetch Api k sath post request kesy krty h : 
+post request : hm tb krty h jb b hmy ko b data bry server mn bhjna hota h  ku k 
+		Get request ki limit hoti h  k url mn hm ktna data send kr skty h 
+		Now see how send data on server.
+
+		To make a post request we need to use fetch options jesy k fetch api k 		sath jo dusra option hota  h wo options ka hota h or agr hm wo options		ko apply krty h  tb e hm post request bhj skty h 
+
+ye options kdr dena h ?  
+website : json placeholder
+				let options = {
+  method: "POST",
+  headers: {
+    "Content-type": "application/json"
+
+  },
+  body: JSON.stringify({
+    title: 'Annas',
+    body: 'khalid',
+    userId: 2112383,
+  }),
+}
+fetch('https://jsonplaceholder.typicode.com/posts', options)
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+}
+
+
+another example :
+
+
+const createTodo = async (todo) => {
+  let options = {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json"
+
+    },
+    body: JSON.stringify(todo),
+  }
+
+let p =await fetch('https://jsonplaceholder.typicode.com/posts', options)
+  let response = await p.json()
+  return response 
+}
+
+const mainFunc = async ()=>{
+  let todo ={
+      title: 'Annas',
+      body: 'khalid',
+      userId: 2112383,
+    }
+let todor =  await createTodo(todo)
+  console.log(todor)
+}
+
+mainFunc()
+
+
+other example:
+
+const createTodo = async (todo) => {
+  let options = {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json"
+
+    },
+    body: JSON.stringify(todo),
+  }
+
+  let p = await fetch('https://jsonplaceholder.typicode.com/posts', options)
+  let response = await p.json()
+  return response
+}
+
+const getTodo = async (id) => {
+  let response = await fetch('https://jsonplaceholder.typicode.com/posts/1' + id)
+  let r = response.json()
+  return r
+}
+const mainFunc = async () => {
+  let todo = {
+    title: 'Annas',
+    body: 'khalid',
+    userId: 2112383,
+  }
+  let todor = await createTodo(todo)
+  console.log(todor)
+  console.log(await getTodo(5))
+}
+
+mainFunc()
+
+Cookies: 
+	are small strings of data stored directly in the browser   			(the data directly inside the browser)  (key value pairs  )
+	
+
+console.log(document.cookie)
+document.cookie = "name=Annas5585"
+document.cookie = "name2=khalid5585"
+console.log(document.cookie)
+
+or agr name=annas kry gy to wo uper wala replace hoga 
+cookie add hota h hmesha but name same hoga to replace hoga
+eg:
+
+console.log(document.cookie)
+document.cookie = "name=Annas5585"
+document.cookie = "name2=khalid5585"
+let key = prompt("Enter your key ")
+let value = prompt("Enter your value ")
+document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+console.log(document.cookie)
+// decode krny  k lie fn decodeURIComponent("")isk andr value dalni h jo decode krni h
+
+
+cookie options: limit od cookie is 4kb
+cookie have serveral options which can be provided after key = value to a set call like this
+document.cookie = "use = anas;path /a; expires = Tue, 29 March 2050 03:25:22 GMT"
+
+
+localStorage =  console mn ye likhna h or application mn key py touch kry gy to uski value show hogi 
+page ya browser dono ko reload krny sy hmra data dell nai hoga dono survive hon gy
+
+localStorage.setItem("name", "Annas")
+ 
+
+syntax:
+
+let key = prompt("Enter key which you want to set")
+let value = prompt("Enter key which you want to set")
+
+localStorage.setItem(key, value)
+
+console.log('The value at  ${key} is ${localStorage.getItem(key)}')
+
+example : 
+
+let key = prompt("Enter key which you want to set")
+let value = prompt("Enter key which you want to set")
+
+localStorage.setItem(key, value)
+console.log('The value at  ${key} is ${localStorage.getItem(key)}')
+if (key == "red " || key == "blue") {
+  localStorage.removeItem(key)
+}
+
+
+if (key == 0) {
+  localStorage.clear()
+}
+
+
+localStorage.length()  : index mn values dal k dekh skty hh 
+
+
+Session Storage:  very rarely used  & similiar  to localstorage  It exsist oonly within the current browser .
+
+					OOP
+
+ProtoType  :
+		
+a.__proto__ = p
+
+eg:
+let a = {
+  name: "Annas",
+  language: "JavaScript"
+}
+console.log(a)
+
+
+let p = {
+  run: () => {
+    alert("run")
+  }
+}
+
+a.__proto__ = p
+a.run()
+
+example:
+
+let a = {
+  name2: "Annas",
+  language: "JavaScript"
+}
+console.log(a)
+
+
+let p = {
+  run: () => {
+    alert("run")
+  }
+}
+
+p.__proto__ = {
+  name: "Ak"
+}
+a.__proto__ = p
+a.run()
+console.log(a.name)
+
+
+classes and objects :
+
+classes:
+
+class RailwayForm{
+  submit(){
+    alert("Form Submitted ")
+  }
+  cancel(){
+    alert("This form is cancelled")
+  }
+}
+
+let annas = new RailwayForm()
+let khalid = new RailwayForm()
+
+annas.submit()
+khalid.submit()
+khalid.cancel()
+
+eg :
+
+
+class RailwayForm{
+  submit(){
+    alert(this.name +" : Your Form Submitted for train number : " + this.trainno)
+  }
+  cancel(){
+    alert(this.name + " : This form is cancelled for train number : " + this.trainno)
+  }
+  fill(givenname,trainno){
+    this.name = givenname
+    this.trainno = trainno
+    
+  }
+}
+//create form for annas 
+let annasForm = new RailwayForm()
+// Fill the form with annas  details 
+annasForm.fill("Annas",5585)
+//create form for khalid  
+let khalidForm = new RailwayForm()
+// Fill the form with khalid   details
+khalidForm.fill("khalid",420)
+
+annasForm.submit()
+khalidForm.submit()
+khalidForm.cancel()
+
+				Constructor:
+class RailwayForm {
+  constructor(givenname, trainno) {
+    console.log("Constructor called " + givenname + " " + trainno)
+    this.name = givenname
+    this.trainno = trainno
+
+
+  }
+  submit() {
+    alert(this.name + " : Your Form Submitted for train number : " + this.trainno)
+  }
+  cancel() {
+    alert(this.name + " : This form is cancelled for train number : " + this.trainno)
+  }
+
+}
+//create  and fill form for annas 
+let annasForm1 = new RailwayForm("Annas", 5585)
+let annasForm2 = new RailwayForm("anas", 420)
+// Fill the form with annas  details 
+// annasForm1.fill()
+// annasForm2.fill("Annas", 5585)
+//create form for khalid  
+let khalidForm = new RailwayForm("khalid ", 2510)
+// Fill the form with khalid   details
+// khalidForm.fill("khalid", 420)
+
+annasForm1.submit()
+annasForm2.submit()
+khalidForm.submit()
+khalidForm.cancel()
+
+
+mdn dekh skty h 
+
+
+				Inheritance:
+
+
+class Animal {
+  constructor(name, color,) {
+    this.name = name
+    this.color = color
+  }
+  run() {
+    console.log(this.name + " is running!")
+  }
+  shout() {
+    console.log(this.name + " is Shouting!")
+  }
+}
+
+class Monkey extends Animal {
+eatBanana()
+  {
+    console.log(this.name + " is eating banana ")
+  }
+  hide(){
+    console.log(`${this.name} is Hiding`)
+  }
+}
+
+  let ani = new Animal ("Cat ", "Black")
+  let m = new Monkey("Dog ", "White ")
+
+ani.shout()
+m.eatBanana
+m.hide()
+
+
+
+
+				Method Overriding
+
+
+class Employee{
+  login(){
+    console.log(`Employee has Logged in`)
+  }
+  logout(){
+    console.log(`Employee has Logged out`)
+  }
+
+  requestLeaves(leaves)
+  {
+    console.log(`Employee has requsted ${leaves} Leaves`)
+  }
+}
+
+class Programmer extends Employee{
+  requestCofee()
+  {
+    console.log(`Employee has requsested ${x} cofees`)
+  }
+    requestLeaves(leaves)
+  {
+    // console.log(`Employee has requsted ${leaves + 1} Leaves (One Extra )`)
+    //agr hm chaty h k uper jo llikha hua h woi nechy aye or agr hm uper changing kry to wo nechy b ho  to usk lie parent class ko call krna pry ga uska tareeka yeh  super + fn name 
+    super.requestLeaves (4)
+    console.log("One Extra is granted ")
+  }
+}
+
+let e = new Programmer()
+e.login()
+e.requestLeaves(3)
+
+
+
+
+				Static Methods 
+
+
+class Animal {
+  constructor(name) {
+    this.name = Animal.capitalize(name)
+  }
+  walk() {
+    alert("Animal " + this.name  + " is walking ")
+  }
+  static  capitalize (name)
+  {
+    return name.charAt(0).toUpperCase() + name.substr(1, name.length)
+  }
+}
+
+j = new Animal("jack" )
+j.walk()
+
+		
+
+			Get , Set 
+
+
+
+class Animal {
+  constructor(name) {
+    this._name = name
+  }
+  fly() {
+    alert("I am Flying ")
+  }
+  get name() {
+    return this._name //_name is lie lgya ku k hm dirext name nai lga skty  
+  }
+  set name(newName) {
+     this._name  =  newName //_name is lie lgya ku k hm dirext name nai lga skty  
+  }
+}
+let a = new Animal("Cat")
+console.log(a.name)
+a.name = "jack"
+a.fly()
+
+
+					IIFE
+			Immediately Invoked Function  Expression
+
+is sy hum async await ka syntax chala skty h bagir kisi additional function ka 
+
+let a = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(456)
+    }, 4000)
+  })
+}
+( async () => {
+
+  let b = await a()
+  console.log(b)
+  let c = await a()
+  console.log(c)
+  let d = await a()
+  console.log(d)
+}
+)
+()
+
+// jo b ho ho wo aik fn mn dal k esy  call krna () 
+	
+
+				Destructuring
+
+Destructuring :    assingment is used to unoack values from an array or properties from objects into distinct variables.
+
+eg :
+
+let arr = [3, 5 , 8, 9 , 12 , 14 ,15 ]
+
+// let a = arr [ 0 ]
+// let b =arr[ 1 ]
+// let [a,b,c ,d , ...rest ] = arr
+// console.log(a,b,c,d,rest)
+
+//agr hm chaty h k a ko hm 3 assign kr dain to us k lie 
+let [a,, , , ...rest ] = arr
+console.log(a,rest)
+
+
+spread operator :
+
+
+// spread syntax 
+
+let arr1 = [3, 5 , 8]
+let obj1 = {...arr1}
+console.log(obj1)
+
+
+function sum (v1,v2,v3)
+{
+  return v1 +v2 +v3
+}
+console.log(sum(...arr1))
+
+
+				Hosting 
+
+means whenever you declare a variable at the bottom it appears automatically declared at the Top.
+JavaScript only hosts declerations not initialization 
+the variables wil be  undefined  until the line where its initialized is reached.
+
+
+
+			Cloure Set (Mostly asked interviewed Qs)
+
+
+message = "Goood Global "
+function hello1() {
+  message = "Goood Morning "
+
+    // let message = "Good Afternoon"
+    console.log("Hello 1 : " + message)
+ let c =  function hello2(){
+   console.log("I am C : " + message )
+ } 
+  return c
+}
+c= hello1()
+c()
+
+			Arrow Function Revisited
+
+
+const sayHello = (name ,greeting ) => console.log(greeting + "  " + name)
+const x = {
+  name: "Annas",
+  role: "JS Developer",
+  exp : 30,
+  show: function (){
+  
+    setTimeout(function(){
+      let that =this
+      console.log(`The name is ${that.name}\n The Role is ${that.role}`)
+    },3000)
+  }
+}
+sayHello("Annas", "Good AfterNoon")
+
+// console.log(x.name,x.exp)
+x.show()
+
+
+
+			Password Generate Code
+
+
+class Password {
+  constructor(){
+    console.log("Welcome To Password Generator ")
+    this.pass = ""
+  }
+  generatePassword (len){
+    let chars = "abcdefghijklmnopqrstuvwxyz"
+    let numbers= "1234567890"
+    let special= "!@$%^&*()"
+    if(len < 3){
+      console.log("Your Password should be atleast 3 Characters long")
+    }
+    else{
+      let i= 0
+      while(i < len)
+        {
+          this.pass += chars[Math.floor(Math.random()*chars.length)]//is sy 1 num random mil jaye ga 
+          this.pass += numbers[Math.floor(Math.random()*numbers.length)]
+          this.pass += special[Math.floor(Math.random()*special.length)]
+        i +=3
+        }
+      this.pass = this.pass.substr(0, len)
+      return this.pass
+    }
+  }
+}
+let p = new Password ()
+console.log(p.generatePassword(7))
+
+			
+
+		
+	
+			Modules:
+why we need ?
+		
+	agr 1 project h uspy 10 15 bndy kam kar rahy hn differnt chzo py chata hu k hr koi developeer apna alag alag code kry or akhir mn  us code main developer main project mn merge kr dy 
+
+ab agr esa code h eg syntax h :
+
+
+const hello = ()=>{
+    console.log("Annas")
+}
+module.exports = hello;
+
+or ye hmy ab dusri file mn export krna h to hmy dusri file mn esy likhna pry ga 
+
+
+const hello = require("./module1")
+hello()
+
+
+
+dusra or b :
+
+const hello = ()=>{
+    console.log("Annas")
+}
+const ahello = (name)=>{
+    console.log("|Khalid " + name)
+}
+module.exports = {hello , ahello};
+
+or dusri sy export k lie :
+
+const hello = ()=>{
+    console.log("Annas")
+}
+const ahello = (name)=>{
+    console.log("|Khalid " + name)
+}
+module.exports = {hello , ahello};
+
+
+
+				ES 6 Module
+		
+	
+	
+	
+				egular expression 
+
+
+const regex = /very/g
+const text = "Annas is a nice very very very nice osm"
+console.log(text.replace(regex, "VERY"))
+
+
+// https://regexr.com/
+// ye website h ispy apna text dalna h or cheatsheets open krni h then kch b krna ho udr syntax dia hua h
+
+
+				Time Zone JS
+
+function play(){
+  let audio = new Audio ('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
+  audio.play();
+  
+}
+
+setInterval(()=>{
+  let d = new Date()
+  time.innerHTML = d.toDateString()+ "  " + d.toTimeString()
+})
+setTimeout(()=>{
+  play()
+  
+},2000)
+
+			Now With Alaram 
+
+
+
+

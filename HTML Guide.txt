@@ -1,0 +1,272 @@
+To Make a Website We Learn three things 1st is HTML(is used for enter data defining page layout ) 2nd is CSS(is used for desinging styling  ) and 3rd is Javascript(To Program Logic for page Layout Etc ) 
+1.	1st thing is safe file as Name.html 
+Basic website Tags And Data color Table etc  
+<html>
+<title> Muhammad Annas Khalid </title>
+<body>
+<h1 style = color:purple><center>Welcome To My Project </center></h1>
+<table border="1"  height="50" width = "450" > <p  style=color:red ><tr ><td><center style =color:blue><b>I am Going To Start practice</b> </center></td></tr></p></table>
+<table border="1"  height="50" width = "450" > <p  style=color:red ><tr ><td><center style =color:tomato><b> Trying </b> </center></td></tr></p></table>
+<table border="1"  height="50" width = "450" > <p  style=color:red ><tr ><td><center style =color:green><b>Because i am beiginer </b> </center></td></tr></p></table>
+
+</body>
+</html>
+2.
+p Enter paragraph start then Lorem (2,20,300)koi b number dal k enter kro to utny words generate ho jaye gye 
+3. Inspect py jaa k runtime py changing kr k dekh skty hn apni website of phone waly option py ja k dekh skty hn k Mobiles py website kesi lagy gi 
+4.<p></p> This is Tag 
+5. But <p>ABC </p>	This complete is element 
+6. How to add Comments  So press ctrl+/  comment will  be added 
+7. It is Not Case Sensitive 
+
+
+
+
+										Chpater 2 About TAGS :
+
+	Details: koi b text or uski detail hogi or usko expand kr skty h 
+	BDO    : This is use change text direction
+	abbr	: is use for abberivations 
+	Samp 	: is use to show monospace output 
+	kbd 	: shows different type off keys
+
+
+
+8.  <a></a> This is anchor tag mn jo b text hota h us py click krny sy URL open ho jata h ya location py ly jata h Like 
+	<a href="https://codewithharry.com"></a>     Then chrome py link open krny k lie jo likha ana chye wo esy hoga (href jo likha h uska mtlb h k link of a website )
+	<a href="https://codewithharry.com">Click Here to Open Harry Website </a>
+<a href="Prtc.html ">Go To My Practice Work </a>  Website k andr aik or data ya info ya website 
+AGR Link Website ko new Tab Mn open krna ho to : 
+<a href="https://codewithharry.com" target ="_main"  >Click Here to Open Harry Website </a>
+
+Image k Through Website open krna 
+
+ <a href="https://www.w3schools.com/" target="_main ">
+       <img src="work.jfif" alt="Click Here  To acess W3 Schools" width="123" height ="200" > landscape ya patriot mn pixel mn pathy  us sy bachny  k lie koi 1 chz set krty h height ya width us sy dusri Auto set Ho jati h 
+        
+
+9. Alt duba k kahi b click kro to multiple cursors ban jaty hn phr 1 e bar mn kch b dell ya add kr skty  hn 
+10.WordWrap data to horizontal show krta h lambi line wgra nai show krta 
+11.Image Add krna 
+	img.src <img src = "image.jpg"  width="121px" height="50" > size adjsut esy krty hn 
+		Agr Ksi folder sy image add krni ho to img.src <img src = "FOLDERNAME/image.jpg" )
+
+		<b></b> Bold 
+			<i></i> Italic 
+				<u></u> underline 
+					<br> BreakLine
+						<big>This is Big </big><br>
+    							<small>This is Small </small>
+								<hr> Horizontal Line Banti h Text py <hr >
+									<sub> sbcript add  esy  <p>CO <sub>2</sub></p>
+										<sup > superscript add esy    <p>a <sup>3</sup></p>
+12. Image add krny k lie 
+	 <style>
+            body {
+              background-image: url('anas.jpg');   pic ka name or uski type likni h () mn or internet sy image address copy krna h
+            background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-size:cover;
+			}
+            </style>
+
+13. Pre Tag 
+<pre>
+A
+B
+C kch b 
+</pre >
+
+
+
+									Chapter 3 # PAGE LAYOUT 
+
+
+
+14. <body>
+    <header>
+        This is Header 
+<main>
+<section></section>    page section 
+<article></article >   self contained content 
+<aside></aside >    content aside from content (eg  Ads )
+</main>
+<footer>
+    This is Footer 
+</footer>
+    </header>
+</body>
+
+15. DIV Tag  It is container  (div / span )
+<section>
+        <div>
+           <h1>why  HTML is Good</h1>
+           <p>Bcz it is good .</p> 
+        </div>
+   
+    
+        <div>
+            <h1>Why AK </h1>
+           <p>My Wish </p>
+        </div>
+    </section>
+OR
+<body>
+  <header>
+
+
+  </header>
+  <main>
+    <section></section>
+    <section></section>
+    <aside>
+        <div>
+
+        </div>
+    </aside>
+    
+
+  </main>
+  <footer>
+
+
+  </footer>
+</body>
+
+DIV is BLock Level conatiner 
+ SPAN inline elemnt h jtna lika ho utna 
+SEO Friendly website mn esy tags wgra hoty hn 
+HEADER FOOTER MAIN SEMENTIC TAGs
+											CHAPTER # 4 LISTS FORMS AND TABLES 
+
+
+
+16.Ul is used unorderd List  which is used to display List 
+	Li Stands for List sItem 
+	OL stands for Ordered List 
+	 <ul type = circle> type apni mrzi ki sqaure circle 
+        <li>Home</li>
+        <li>About</li>
+        <li>Service </li>
+        <li>Contactl</li>
+
+    </ul>
+Mn counting ROMAN IS type ka likha ana chye ho agr to 
+	  <ol type ="I">
+        <li>Home</li>
+        <li>About</li>
+        <li>Service </li>
+        <li>Contactl</li>
+    </ol>
+17. Table 
+Th Table Header 
+  <tr>
+                <th>S.NO </th>
+                <th>Player Name </th>
+                <th>Max Score </th>
+                <th>Game</th>
+            </tr>
+1 Row 4 cloumns 
+	 <tr>
+                <td>3 </td>
+                <td>Haris</td>
+                <td>60 </td>
+                <td>Cricket</td>
+            </tr>
+Table Head OR Body IMP lazmi likhna h 
+Example:  
+<table>
+            <caption>Best Scores By Differnet Palyers</caption>
+            <thead>
+            <tr>
+                <th>S.NO </th>
+                <th>Player Name </th>
+                <th>Max Score </th>
+                <th>Game</th>
+            </tr>
+            <tr>
+                <td>1 </td>
+                <td>Rizwan</td>
+                <td>98 </td>
+                <td>Cricket</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>55</td>
+                <td>98 </td>
+                <td>Cricket</td>
+            </tr>
+            <tr>
+                <td>3 </td>
+                <td>Haris</td>
+                <td>60 </td>
+                <td>Cricket</td>
+            </tr>
+        </tbody>
+        </table>
+COLSPAN COLOUMN 
+ROWSPAN COLOUMN 
+
+ESY HEAD OR BODY BANATY HN 
+18. FORM TAG 
+	INPUT Element : Type of text  Check Box, Radio Button And Submit .
+
+		<body>
+    <div>
+        <h1>Trip Traveling </h1>
+        <form action="Form.php">
+            <input type="text" placeholder="Enter Your Name"><br>
+            <label for="Sectionida">
+                <input type="radio" value="Section a " name="Section" id="Sectionida"> Section A 
+            </label>
+            <label for="Sectionidb"> id(kch b sath likh k id wala mn b same likhna h tab wo select hoga )
+                <input type="radio" value="Section b " name="Section" id="Sectionidb"> Section B 
+            </label>
+            <label for="Sectionidc">
+                <input type="radio" value="Section c " name="Section" id="Sectionidc"> Section C <br>
+            </label>
+            <input type="checkbox" name="Food Canteen Card" id="foodcanteen" class="red" name="canteen">
+            <label for="foodcanteen">Want Canteen Card</label><br><br>
+            <textarea name="explain" id="explain" cols="30" rows="10" placeholder="Explain Why You Want to Join "></textarea>
+        <select name="car" id="car">
+            <option value="no-car"> Select Your Car</option>
+            <option value="Audi">Audi</option>
+            <option value="Mercedees">Mercedees </option>
+            <option value="Honda">Honda </option>
+        </select>
+        </form>
+        
+    </div>
+</body>
+19. Video Dalna 
+	Open Any video usko share py ja k embed wala code ko copy kr  k just paste krna h 
+or 
+<iframe src="https://www.bing.com" frameborder="0"  width="900px"></iframe> iframe  tag sy kafi sari websites imbed kr skty h but kafi sari nai kr skty 
+OR 
+	System sy Video Dalny ka tariqa 
+									
+
+
+											CHAPTER # 5 SEO (search engine Optimization)
+
+
+20.   SEO is Used for search Our website (value provide krna) 
+	ON Page SEO		[Done By Html developers]
+	OFF Page SEO	[means you would to do building]
+1st thing is set the title very nice and precise and to the  point  ku k yehi wo chz h wo search mn nazar ati h 
+2nd thing is set a meta discription 
+    meta:des								
+3rd Set a nice URL slug
+4th set a keyword meta tag (optinal)
+5th set a author tag 
+6th set a fav icon
+uper task bar mn icon esy laty h
+7th  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+				Website in 5 mins
+src=www
+<link  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> 
+
+Bootstrap (BEsT h ) sy b code copy kr skty h 

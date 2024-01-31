@@ -1,0 +1,119 @@
+Guide : version control or GitHub
+
+
+git status
+git init
+ls
+git status
+git add .
+git status (sb green ho gye mtlb staging ho gai h )
+git commit -m  "message" (syntax hota h ye or end py msg hota h )
+git log	(changing dekhny k lie k kisny kya kya changing ki h )
+git config --global () username wgra chnge krnyy k lie hota h 
+
+
+how to push or pull ?
+gitgub py ja k new repo bnani h + py ja k 
+jo code push krna h us folder mn ja k uper waly steps b kr skty +  
+githuub py http or git bash hota h agr hm git bash  use kr ry h to   SSH use krna h hmy or uska url copy krna h 
+or phr esy krna h 
+git remote add origion git@github.com:Anu5585/Chat-App.git (origon k bd wala jo ssh copy kiya tha wo h )
+then 
+
+then setting kholo git hub ki 
+profile setting then us k andr ssh key and gpg key wala optoin khol k new ssh key banani h 
+ye guide link h jdr sy copy paste kr skty h
+(https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+esy :
+
+ssh-keygen -t ed25519 -C "annaskhalid794@gmail.com"
+enter enter krna h 
+then 
+ eval $(ssh-agent -s) ye paste krna h git bash mn e 
+ssh-add ~/.ssh/id_rsa
+clip < ~/.ssh/id_ed25519.pub 
+ye paste krny k bad kahi b  ctrl v kry gy to esi ssh paste ho jye gi :
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHheRMM5PsLXtRgUqLlbmuRV58hr0UQyOI7XwGM+kVp8 annaskhalid794@gmail.com
+
+
+ye wali ssh hmy apni new ssh wali jaga py paste kr deni h jis sy hmri ssh key bn jye gi then ye likho :
+git push -u origin master 
+
+
+
+final eg esy push hoga : 
+git status
+git init 
+ls
+git add .
+git status 
+on branch master 
+git commit -m "Chat App"
+git push 
+git remote add origin
+git remote add origin git@github.com:Anu5585/Chat-App.git
+git branch -m main
+git push -u origin main
+git log
+
+
+
+Clone repo k lie 1 folder ksi b name sy bnao 
+github py apni repo open kro udr ssh wala code copy kro
+esy : 
+git@github.com:Anu5585/Chat-App.git 
+
+
+ye likhna h jdr b hmny clone krna h gitbash mn 
+
+git clone git@github.com:Anu5585/Chat-App.git
+
+hmri repo clone ho jye gi 
+
+
+
+how to igonre files in repo?
+
+touch .gitignore
+ls -la
+notepad .gitignore (is sy notepad open hoga jis mn hum ignore k rules dal skty h )
+link : (https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files)
+
+
+1st = file ka nam esy : app.txt
+2nd = *.pyc
+3rd = *.sql 
+esy jo jo ignore krny k lie likhty h 
+
+
+branching: agr hm apni  repo ko chnge krna chty h to orignal mn kch chnge nai hoga jo hm ny new file bnai h usmn e hoga 
+ 
+git branch 
+git branch login system nam koi b ho skta h 
+git checkout login system 
+git branch 
+git status
+git add .
+git commit -m "login system"
+git push origin login system (na k mster wala )
+
+
+how to merge branch file into maaster origin :
+
+
+git branch 
+git checkout master (is sy hm master mn  move ho jty  h)
+git merge login system 
+git push -u origin master
+
+
+how to delete branch : from local:
+git branch -d login system (branch name)
+
+
+how to delete branch : from remote:
+git push origin  --delte login system (branch name h login system )
+
+

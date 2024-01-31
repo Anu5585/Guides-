@@ -1,0 +1,32 @@
+function play() {
+  var audio = new Audio('https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3');
+
+  audio.play();
+
+}
+
+setInterval(() => {
+  let d = new Date()
+  time.innerHTML = d.toDateString() + "  " + d.toTimeString()
+}, 1000)
+// setTimeout(()=>{
+//   play()
+
+// },2000)
+
+const setAlarm = (seconds) => {
+  let d = new Date().getTime()
+  setTimeout(() => {
+    play()
+  }, seconds * 1000)
+  setInterval(() => {
+    secondsLeft = - (new Date().getTime() - (d + seconds * 1000))
+    if (secondsLeft > 0) {
+      alarm.innerHTML = "Alaram Ringing in " + Math.floor(secondsLeft / 1000) + "Seconds"
+    }
+  })
+}
+
+
+let s = prompt("After How Many Seconds Do You Want an Alram?")
+setAlarm(parseInt(s))

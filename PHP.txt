@@ -1,0 +1,310 @@
+				PHP 
+website = php.net
+1st = open xampp and start mysql and appache
+2nd = opne xampp in c and htdocs create new folder and then open with vs code 
+3rd = create new file  which iss its name = jo b ho = eg = index.php 
+4th = opne boiler code with ! write code same like hmtl then opne in browser localhost/php1st or any name .
+Now 
+Display = echo "";
+Syntax =
+ 	?php
+        echo"Hello world This is printed using php ";
+        ?>
+
+Variables in php = Dollar$ sign sy hoga eg:
+   $variable1=2;
+        $variable2= 5;  
+        echo $variable1;
+        echo $variable2;
+
+Add Variables =  echo $variable1 + $variable2;
+Spaces manually add krni prti h ismn 
+It is not case sennsitive 
+Line Break = echo "<br>";
+Operators =
+   // Arithmetic Operartor
+        // Assingment Operartor
+        echo "<br>";
+        // Comparison Operator
+
+Agr heading dalni ho to html use kry gy 
+  echo"<h1> Comparision Operators</h1> ";
+
+        // Increment/Decrement Operartor
+        // Logical Operartor
+
+Example For All : 
+
+
+ <div class="container">
+        This is my 1st php website 
+        <?php
+        echo"Hello world This is printed using php ";
+        //Secret Logic Or Algorithm
+        $variable1=2;
+        $variable2= 5;  
+        echo $variable1;
+        echo $variable2;
+        echo $variable1 + $variable2;
+        // Operartors in PHP 
+        // Arithmetic Operartor
+        echo "<br>";
+        echo "The value of variable1 + variable2 is ";
+        echo "<br>";
+        echo $variable1 + $variable2;
+        echo "<br>";
+        echo "The value of variable1 - variable2 is ";
+        echo "<br>";
+        echo $variable1 - $variable2;
+        echo "<br>";
+
+             // Assingment Operartor
+
+             $newVar =$variable1;
+             $newVar +=1;
+             echo "The value of new var is ";
+             echo"<br>";
+             print($newVar);
+             echo"<br>";
+        // Comparison Operator
+        echo"<h1> Comparision Operators</h1> ";
+        echo"<br>";
+        echo "The value of 1==4 is" ; 
+        echo var_dump(1==4) ;
+        echo "<br>" ;
+        echo "The value of 1!=4 is" ; 
+        echo var_dump(1!=4) ;
+        echo "<br>" ;
+        echo "The value of 1>=4 is" ; 
+        echo var_dump(1>=4) ;
+        echo "<br>" ;
+        echo "The value of 1<=4 is" ; 
+        echo var_dump(1<=4) ;
+        echo "<br>" ;
+        // Increment/Decrement Operartor
+        echo $variable1++;
+        echo $variable1;
+        echo $variable1--;
+        echo ++$variable1;
+        echo --$variable1;
+        // Logical Operartor
+            // and (&&) 
+            // or (||)
+            // xor
+            // not (!)
+            // $myVar = (true) and (true) ;
+            $myVar = (false) and (true) ;
+            echo "<br>" ;
+            echo var_dump($myVar );
+        ?>
+
+    </div>
+
+Data Types : 
+String 
+        int 
+        float
+        boolean
+        array
+       object
+
+Constant = Is a identifier its value  doesnot changed 
+How to use : 
+define('PI' , 3.14); 
+call esy krty  h :
+echo PI;
+
+IF ELSE :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Tutorial</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        max-width:80% ;
+        background-color: rgb(228, 195, 195);
+        margin: auto;
+        padding: 23px;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <h1> Lets Learn about Php </h1>
+        <p>Your Party Status is here : </p>
+        <?php
+    $age= 22;
+    if($age>18)
+    {
+        echo "You can go to the Party ";
+    }
+    else if ($age==7)
+    {
+        echo"You are 7 Years Old"
+    }
+    else{
+        echo "Sorry you are not eligible for going party";
+    }
+        ?>
+    </div>
+</body>
+</html>
+
+
+   Arrays in php 
+    
+
+	languages = array("Python", "C++" , "php" , "NodeJs");
+    echo $languages[0];
+    // echo $languages[1];
+    // echo $languages[2];
+Agr items count krny h array mn to   echo count($languages);
+
+
+  // Loops in php 
+    $a= 0;
+    while ($a <= 10) {
+        echo " <br>The value of  a is : ";
+        echo $a;
+        $a++;
+    }
+
+
+
+  // Iterating arrays in php using while Loop
+    $a= 0;
+    while ($a < count($languages)) {
+        echo " <br>The value of  languages  is : ";
+        echo $languages[$a];
+        $a++;
+
+
+    // Iterating arrays in php using Dowhile Loop
+    $a= 0;
+    do 
+    {
+        echo "<br>The value of a is  : ";
+        echo $a ;
+        $a++;
+    }
+    while ($a < 10) ;
+
+
+// For Loop 
+    for ($a=0; $a < 10; $a++) { 
+        echo "<br>The value of a is  : ";
+        echo $a ;
+
+// foreach loop
+    foreach ($languages as $value )  {
+        echo " <br> The Value from foreach loop  is    ";
+        echo $value;
+    }
+
+    function print5()
+    {
+        echo "Five   ";
+    }
+    print5()   ;
+    print5() ;
+    print5() ;
+    print5() ; 
+
+  function print_number($number)
+    {
+        echo "<br> your number is   ";
+        echo  $number;
+    }
+    print_number(45) ;
+    print_number(500) ;
+
+
+function processMarks($marksArr)
+{
+$sum = 0; 
+foreach($marksArr as $value)
+{
+$sum += $value;
+}
+return $value;
+
+#annas = [50,50,60,60]
+$sumMarks = processMarks($annas);
+echo "Total marks are $sumMarks" ;
+Stings :
+
+
+$str = "This ";
+echo $str;
+$lenn = strlen($str);
+echo "The length of the string is ";
+echo $lenn;
+
+if we  want to concatenate string = 
+echo "The length of the string is " .$lenn ;
+or
+
+echo "The length of the string is " .$lenn . ". Thank You <br>" ;
+echo $lenn;
+
+echo "The number of words in  tise string is " .str_word_count($str) . ". Thank You <br>" ;
+
+Now Project :
+1 file bnao html mn hi then css simple jo hoti h html css js 
+then setting after that 
+when its set 
+phpmyadmin / xampp cp sy mysql k admin sy b open ho jaye ga then create new data base 
+eg = Travelling 
+us k num of columnshoty h wo apni mrzi sy set kr skty h eg hmy apny form k lie name,phone,email esi kafi chzo k lie chye to  Num Of Columns 8 kr lyty h (8)
+
+then values dalni h like no ko =4  age = 3 esy sb fill krni h 
+
+then  insert py click kr k kch values insert kr skty h 
+
+after saving that  jo code ata h eg =  
+INSERT INTO `trip` (`Sno`, `name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES ('1', 'Annas', '22', 'Male', 'annas@gmail.com', '03420239984', 'This is a good value \r\n', current_timestamp());
+
+ye code copy kr k jdr project h udr script k nechy copy krna h
+now 1 new page bnao like 
+index.php  or us mn  esy code dalmna h 
+
+
+<?php
+    // Server bana h phly k knsa h 
+    $server = "localhost";
+    // Ab usko username btana h 
+    $username="root";
+    // or password bana h jo k bllank hota h 
+    $password = ""; 
+
+    // ab connection bana  h 
+    $con = mysqli_connect($server, $username, $password);
+
+    // now chk
+    if(!$con)
+    {
+        die("connection to this daata base failed due to  " . mysqli_connect_error());
+    }
+    echo "Sucess Connecting to db ";
+
+?>
+
+<?php
+echo " Associate Arrays <br>  ";
+$favcol = array(
+    'annas'=>'red',
+    'ali'=>'green',
+    'khalid'=>'orange');
+echo $favcol['annas'];
+?>
+
+
+What is sql and RDBMS?
