@@ -1,0 +1,708 @@
+For SEO Ai Tool: 							https://seona.usestyle.ai/new
+
+GitHub:
+For Building Apps / compilers / etc Repo =				https://github.com/practical-tutorials/project-based-learning/blob/master/README.md
+Mini Projects 			   Repo  =				https://github.com/Ayushparikh-code/Web-dev-mini-projects
+
+
+
+Best UI Designs like btns others etc :	https://uiverse.io/  +  https://neumorphism.io/#e0e0e0   +    https://undraw.co/illustrations  +  https://www.shapedivider.app/ 
+
+				        https://patternpad.com/
+
+Animations 3D 2D  All :          https://css-loaders.com/				https://animatedbackgrounds.me/
+Biultin Design 	      : 	https://freefrontend.com/ 				https://cssgradient.io/		https://uideck.com/ (Templates html css js )
+Icons Library 	      :		 https://boxicons.com/ 	https://www.flaticon.com/	https://icons8.com/		https://feathericons.com/
+Animated Icons 	      :		 https://lordicon.com/
+Unsplash Different Imgs:	 https://source.unsplash.com/720x600/?fitness,gym
+for images : 			https://www.pexels.com/ 		https://www.freepik.com/   	https://pixabay.com/
+Styled Buttons 		: 	 https://cssbuttons.app/
+for fonts : https://fonts.google.com/		https://www.dafont.com/		https://www.fontshare.com/		
+for color plattes: https://coolors.co/			https://color.adobe.com/ 	 https://colorhunt.co/		 http://colormind.io/
+fro generating Latest Svgs : 	https://haikei.app/   +  	https://www.softr.io/tools/svg-shape-generator
+
+									for colors scheme: 
+monochromatic colorss
+
+
+for fonts : Font Finder extension in chrome
+
+
+Hositng free Website : 							infinityfree.com
+
+s
+
+
+
+									Convert code from 1 language to other for free
+
+			https://www.codeconvert.ai/free-converter
+
+
+
+
+
+									Codeium 
+https://codeium.com/		 free to use and generate a to z code + extensions +vscode + intellij idea 
+	
+
+
+									Relume 
+Ai site to generate sitemap and design easy to export to figma 
+
+
+										Free Api's
+fake store Api
+random user data api
+shutterstock 
+mapbpx
+serp api
+.
+
+
+
+
+
+										HMTL
+
+how to add running backgorund/ video in text?
+html = <h1>Annas</h1>
+body{
+padding: 8% 0% 0% 1%;
+}
+
+.h1{
+font-size: 6rem;
+background: url("background.avif");
+background-size: 200% auto;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+animation: animate 30s alternate infini-
+}
+@keyframes animate {
+from{
+background-position: 0% 80%;
+}
+to{
+background-position: 100% 50%;
+}
+}
+
+
+
+
+How to open camrera : in phone
+<input type = "file" capture = ""></input>  is sy userr ka mobile camera open hoga 
+<input type = "file" id= "selfie" capture = "user" ></input> for front camera
+<input type = "file" id= "photo" capture = "environment" ></input> for back camera
+
+
+tool tip: (mtlb jb hm hover kry ksi text py to wo show ho esy hoga: )
+<p title= "subscribe"  >Annas</p>		is sy jb b annas py hoga hoga to subsrcibe likha hu aaye ga 
+
+
+How to add download attribute in html :
+<a href= "policy.pdf." download > click here to download</a>    agr hm download ksi or name sy krna chty  h to us k lie downlaod = "Anas.html" jo b ext dain gy  usi mn download hogi 
+
+
+noopener Tag: 
+If we want to add someone website link in the website then if we use as no opener tag after its website link then nobody will able to reach our privacy of our websiteum
+
+
+
+
+
+How to run text right to left to right
+<marquee direction= "APni mrzi ki right left"></marquee>
+
+
+How to make loader in html or css
+<div id= "loader > </div>  
+body{
+padding : 50px;
+}
+#loader{
+Height : 100px;
+width :100px ;
+border-radius : 50% ;
+border: 5px solid :#ddd;
+border-top:#333;
+animation : rotate 1s infinite;
+}
+
+@keyframes rotate {
+100%{
+rotate:360deg;
+}
+}
+
+Menu icon Library: 
+ <div class="menu">
+      <div class="toggle">
+        <ion-icon name="share-social"></ion-icon>
+      </div>
+
+      <li style="--i: 0; --clr: #1877f2">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      </li>
+    </div>
+
+.menu{
+      position:relative;
+      width: 280px;
+      height:280px;
+      display: flex;
+      align-items:center;
+      justify-content:center; }
+      .menu .toggle{
+      position:relative;
+      height:60px;
+      width:60px;
+      background:#fff;
+      border-radius: 50%;
+      display: flex;
+      align-items:center;
+      justify-content:center;
+      color:#333;
+      font-size:2rem;
+      cursor:pointer;
+      transition:1.25s;
+      z-index:5;
+      }
+      .menu.active .toggle {
+      transform: rotate(360deg);
+      box-shadow: 0  0  2px  #333,
+      }
+
+Text k uper border kesy dety h? ya text k andr image kesy lgaty h :
+<h1>Annas</h1>
+h1{
+font-size: 50px;
+font-weight: 900;
+background-image: url('imgAdress');
+background-size: cover;
+background-clip:text;
+-wekit-background-clip: text;
+color: transparent
+}
+
+
+
+
+How to make colorfull ScrollBar : 
+<div id="page1"></>
+<div id="page1"></>
+<div id="page1"></>
+<div id="page1"></>
+
+#page1{
+height:100%;
+width:100%;
+border-bottom: 2px solid black ;
+}
+body::webkit-scrollbar{
+background-color:transparent;
+}
+body::webkit-scrollbar-thumb{
+background:liner-gradiant(red,blue,green,orange)
+border-radius: 20px;
+
+}
+
+how to make custom selector:  
+<h1>Hellow and welcome to </h1>
+<h2Annas</h2>
+h1{
+font-size:40px;
+}
+h2{
+font-size:40px;
+text-transform:uppercase;
+font-weight:900;
+
+h2::selection{
+color:yellow;
+background-color:black;
+}
+
+
+
+Character Gallery : 
+<div class="container">
+<div class="box box-1" style="-img: url(./img/ img-1.jpg);" data-text="Renji"></div>
+<div class="box box-2" style="-img: url(./img/ img-2.jpg);" data-text="Sora"></div>
+<div class="box box-3" style="-img: url(./img/ img-3.jpg);" data-text="Kaito"></div>
+<div class="box box-4" style="-img: url(./img/ img-4.jpg);" data-text="Tsuki"></div>
+<div class="box box-5" style="-img: url(./img/ img-4.jpg);" data-text="Tsuki"></div>
+
+@import  url("https://fonts.googleapis.com/css2? family=Figtree&display=swap");
+.container {
+position: relative;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+gap: 1em;
+width:800px;
+height :500px;
+transition: all 400ms;
+}
+
+.box {
+position: relative;
+background: var(--img) center center;
+background-size: cover;
+transition: all 400ms;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.box::after {
+content: attr(data-text);
+position: absolute;
+bottom: 20px;
+background:#000;
+color: #fff;
+padding: 10px 10px 10px 14px;
+letter-spacing:4px;
+text-transform : uppercase;
+transform: translateY(60px);
+opacity :0 ;
+transition :all 400ms;
+}
+.container:hover .box{
+filter: grayscale(100%) opacity(24%);
+}
+.box:hover::after{
+transform: translateY(0);
+opacity :1;
+transition delay:400ms;
+
+}
+
+.container .box:hover{
+filter: grayscale(0%) opacity(100%);
+}
+
+.container:has(.box-1:hover){
+grid-template-columns:3fr 1fr 1fr 1fr 1fr;
+}
+.container:has(.box-2:hover){
+grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+.container:has(.box-3:hover){
+grid-template-columns: 1fr  1fr 3fr 1fr 1fr;
+}
+
+.container:has(.box-4:hover){
+grid-template-columns: 1fr  1fr  1fr 3fr 1fr;
+}
+.container:has(.box-5:hover){
+grid-template-columns: 1fr  1fr  1fr  1fr 3fr;
+}
+.box:ntn-child(odd){
+transform: translateY(-16px);
+}
+.box:ntn-child(even){
+transform: translateY(16px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Box Type 3D Button square move : 
+
+<div class = "container">
+<a href= "#" class="btn-flip" data-back = "Back" data-front = "Front" </a>
+</div>
+
+.btn-flip{
+Opacity : 1;
+Outline:0 ;
+color: #fff;
+line-height: 40px;
+position:relitive;
+text-align:center;
+letter-spacing:1px;
+display:inline-block;
+text-decoration:none;
+text-transform : uppercase;
+}
+.btn-flip:before{
+top:0;
+left: 0;
+color:#9999ff;
+display:block;
+line-height:40px;
+transition:0.5s;
+background:#921f7f;
+content: attr(data-front);
+transform: translateY(0)
+	   rotateX(0);
+
+.btn-flip:after
+top:0;
+left: 0; 
+width: 100%;
+color:#9999ff;
+transition:0.5s;
+position:absolute;
+background:#921f7f;
+content: attr(data-back);
+transform: translateY(-50%)
+	   rotateX(90deg);
+.btn-flip:hover:after{
+opacity:1;
+transform:translateY(0)
+	   rotateX(0);
+}
+.btn-flip:hover:before{
+opacity:0
+transform:translateY(50%)
+	   rotateX(90deg);
+}
+
+Apni Css ko agr hm	AutoPrifixer py copy kry gy to wo hmy jo new css dy ga wo duniya k har browser py compatible hoga 
+
+
+
+
+
+
+
+
+
+
+											CSS
+Css Variables : puri css ko 1bar color dy skty by pseudo Class 
+:root{
+--primay-color: koi b dy dy ;
+--text-color : koi b dy dy ;  esy diff color dy skty; 
+}
+in ko use esy krty h site mn :  background-color : var(--text-color)
+
+
+Responsive webpages : Without media queries
+<form class="form">
+<input type="text" placeholder="Username" class="user"/>
+<input type="password" placeholder="Password" class="pass" />
+<button>Log In</button>
+</form>
+.form {
+display: flex;
+flex-wrap: wrap;
+gap: 1em;
+}
+.user {
+flex: 1 0 8rem;
+}
+.pass {
+flex: 1 0 8rem;
+}
+button {
+flex: 1 0 4rem;
+}
+
+or 2nd Method: 
+.container{
+width: min(100% , 950px )
+}
+
+or 3rd Method: 
+<div class ="nav">
+<Input Type= "checkbox" id="nav-check"> 
+<div class="nav-header">...</div>
+<div class="nav-btn">
+<label for = "nav-check">
+<span></span>
+<span></span>
+<span></span>
+</label>
+</div>
+
+.nav {
+height: 50px;
+width: 100%; 
+padding: 0 10px;
+}
+.nav .nav-btn {
+display: none;
+}
+@media (max-width:600px) {
+.nav .nav-btn {
+display: inline-block;
+}
+.nav #nav-check:not(:checked)~ .nav-links {
+height: 0px;
+}
+.nav #nav-check:checked~ .nav-links (
+height: 250px;
+overflow-y: hidden;
+}
+}
+
+
+
+
+
+								Custom	Pictures(Gallery) Adjustment
+
+if we have alot of pics how to adjust them :
+.gallery { 						main div class
+width :30%;
+
+display :grid;							sab pics ko 1 line mn lany k lie ye dono lines h 
+grid-tempalte-columns: repeat(3, 1fr )
+gap:5px ;							imges mn Gap dalny k lie
+
+
+}
+.gallery > img{
+width :100%;
+
+aspect-ratio: 1/1;								size adjust krny k lie 
+object-fit: cover;
+
+}
+
+							
+
+
+
+
+
+
+							picture / image / img svg k sath terhi merhi kesy lgaty h ?
+
+
+open		 https://www.softr.io/tools/svg-shape-generator
+
+<mask id= "mask1" mask-type= "alpha" > ab ye id hmy goup tag g mn use krna h 
+idr wo img ka path paste krna h 
+
+</mask>
+
+
+<g mask="url(#mask1)"   >   is sy img svg k pechy a jye gi agr color blur ho to uper mask1 jdr id di udr mask-type= "alpha"  dena h to set ho jye gi 
+
+
+img(is k andr img dalni h idr ) 			agr img show na ho to src nai krna href kry gy to show ho gi         css mn img ko width apni mrzi ki deni like w:70px;
+															    ss or img mn class img dy deni h bs 
+
+jo image ka path h usko copy kro jtny b h usko g tag k uper mask tag bna k paste krna h 
+
+</g>   x y dal k img ki position set kr skty h 
+
+
+								How to Set images remove background 
+
+<div class="logos">
+<img src="images/adidas.png" alt="">
+<img src="images/apple.png" alt="">
+<img src="images/KIA.jpeg" alt="">
+<img src="images/nike.png" alt="" >
+<img src="images/chanel.png" alt="">
+</div>
+
+.logos img{
+width: 15%;
+aspect-ratio: 3/2;				height width baraber hogi is sy 
+object-fit: contain;				is sy img stretch nai hoti 
+mix-blend-mode: color-burn;			background remove 
+}
+
+2nd method:
+1 img lo or 1 svg jis trah sy pciture lagaani h usko css mn ye likhna esy:
+height:490px; 
+width:400px; 
+object-fit :cover 
+object-position :top;
+-webkit-mask-images: url('img ka url');
+-webkit-mask-size: contain;
+
+
+
+
+
+
+
+
+
+								Typing moving animation like jesy hm likhty h wo agy bhrta h wese e:
+
+
+
+
+.type {		jo text run krwana h uski class mn
+animatoin: type 2s steps(22) ;
+white-space: nowrap;
+}
+@keyframes type{
+from{
+width:0;
+}
+}
+
+
+
+
+
+
+
+
+
+									JavaScript
+
+password show: hide unhide :  Toggle Password :
+
+
+<input id="pass" type="password">
+<input id="check" type="checkbox">
+<script>
+check.onclick = togglePassword;
+function togglePassword() {
+if (check.checked) pass.type = "text";
+}
+else pass.type = "password";
+</script>
+
+
+navbar slider :
+
+
+<div class="navbar-container">
+<div class="navbar-toggle"
+onclick="toggleNavbar()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="navbar">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+</div>
+<div class="content">
+<h1>Demo</h1>
+<p>Demo</p>
+
+body {
+margin: 0;
+font-family: 'Arial', sans-serif; 
+}
+.nav-bar-container{
+display:flex;
+}
+.navbar{
+height:100vh;
+width:0;
+background-color:red;
+position:fixed;
+top:0;
+left:0;
+overflow-x:hidden;
+transitoin:0.5s;
+padding-top:60px;
+}
+
+.navbar a{
+padding:15px;
+text-decoration:none;
+font-size:20px;
+color:white;
+display:block;
+transition:0.3s;
+}
+.navbar a:hover {
+color: rgb(198, 176, 5)
+}
+.navbar-toggle {
+cursor: pointer;
+background-color: white;
+border-radius: 5px;
+margin: 10px 0 0 10px;
+padding: 15px;
+z-index: 1;
+}
+.navbar-toggle span {
+display: block;
+height: 3px;
+width: 25px;
+background-color: #161515;
+margin: 5px 0;
+transition: 0.4s;
+}
+.content {
+margin-left: 25px;
+padding:16px;
+}
+.navs {
+width: 200px;
+}
+
+js:
+
+
+function toggleNavbar() {
+
+let navbar = document.querySelector('.navbar');
+navbar.classList.toggle("navs")
+}
+
+
+		
+
+Dark Mode or light mode:
+
+<h1>Dark mode </h1>
+<h3>Source code link in bio</h3>
+<button onclick="dark()">Dark Mode</button>
+
+
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+transition: background-color 0.5s;
+font-family: Arial, sans-serif;
+background-color: #fff;
+color: #333;
+}
+
+body.dark-mode {
+background-color: #333;
+color: #fff;
+
+}
+
+
+
+function dark() {
+const body = document.body;
+body.classList.toggle("dark-mode");
+}
+
+
+
+Text to speech : 
+const speakBtn = document. querySelector("#playBtn");
+const query = document. querySelector("#text");
+speakBtn.addEventListe@CODEBYSID ("click", playSpeech);
+function playSpeech() {
+const speech = new SpeechSynthesisUtterance I (query.value);
+speechSynthesis.speak (speech);
